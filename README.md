@@ -1,4 +1,10 @@
 # USS
-Data on Universities Superannuation Scheme
-starting to put all uss data in one place
-work in progress
+Data on the Universities Superannuation Scheme
+
+With some calculations and graphs
+
+## Overview
+
+We are attempting to put all USS data in one place.
+
+This is a work in progress
