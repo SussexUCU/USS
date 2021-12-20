@@ -5,7 +5,7 @@ With some calculations and graphs
 
 ## Overview
 
-We are attempting to put all USS data in one place.
+We are attempting to put all the USS data in one place.
 
 This is a work in progress
 
@@ -20,7 +20,9 @@ This is a work in progress
 | `data/assets_returns` | Raw data from USS.These are the annual reported investment return on the fund (percentage) and the reported value of assets (GBP).|  
 | `fifth` |`fifth` | fifth blah|
 
-## Data sources
+## Data references
+
+All data are from USS, but some of it is hard to find or confusing. Here is a list showing where the data have come from in each document. 
 
 | data | docs folder | location  |
 |:--|:--|:--|
