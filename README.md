@@ -20,8 +20,8 @@ This is a work in progress
 | `data/refs` | List of document and page number for each data set. |
 | `fifth` |`fifth` | fifth blah|
 
-## Data references
+## Data sources
 
-| Data | Doc folder | location  |
+| data | docs folder | location  |
 |:--|:--|:--|
-| `cashflows2017` |cashflows | tab 'Cash flows as at 31032017' |
+| `cashflows2017` |cashflows | file '2017...,' tab 'Cash flows as at 31032017' |
