@@ -24,4 +24,4 @@ This is a work in progress
 
 | data | docs folder | location  |
 |:--|:--|:--|
-| `cashflows2017` |cashflows | file '2017...,' tab 'Cash flows as at 31032017' |
+| `cashflows.../2017...` |cashflows | file '2017...,' tab 'Cash flows as at 31032017' |
