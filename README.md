@@ -24,7 +24,8 @@ This is a work in progress
 
 | Data | Source  |
 |:--|:--|
-| `cashflows`|2020: https://github.com/SussexUCU/USS/blob/main/docs/cashflows_2017_2020/2020_valuation_cashflows_for_stakeholders_update.pdf // 2017 https://github.com/SussexUCU/USS/blob/main/docs/cashflows_2017_2020/2017_valuation_cashflows_Sam_Marsh_valuation_modeller_AUG_18_dummy_data.xlsx |   
+| `cashflows`|2020: docs/cashflows_2017_2020/2017_valuation_cashflows_Sam_Marsh_valuation_modeller_AUG_18_dummy_data.xlsx (https://user-images.githubusercontent.com/67890269/146770261-6b719d31-ec32-4a6a-a88b-bb4502a1c220.png)
+ // 2017 https://github.com/SussexUCU/USS/blob/main/docs/cashflows_2017_2020/2017_valuation_cashflows_Sam_Marsh_valuation_modeller_AUG_18_dummy_data.xlsx |   
 | `data/cpi_gilts`|  Raw data from USS. These are the cpi projections from valuations in 2020, 2018, November 2017, September 2017, 2014 and 2011. 2020 also has gilts projections. All projections are 1-year forward rates. These are used to convert discount-rates and cashflows from the nominal-basis to the cpi-basis.  |
 | `data/discount_rates` | Raw data from USS. These are the prudent-assumptions used at each valuation to discount cpi-basis cashflows back to the valuation date to calculate the Liabiliites on a Technical Provisions basis, it is equivalent to calculate the Net Present Value of the future cost of pension provision.|  
 | `data/refs` | List of document and page number for each data set. |
