@@ -25,3 +25,4 @@ This is a work in progress
 | data | docs folder | location  |
 |:--|:--|:--|
 | `cashflows.../2017...` |cashflows | file '2017...,' tab 'Cash flows as at 31032017' |
+| `cashflows.../2020...` |cashflows | file '2020...,' table 1, page 2 |
