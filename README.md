@@ -22,6 +22,6 @@ This is a work in progress
 
 ## Data references
 
-| Data |Doc folder | location  |
-|:--|:--|
+| Data | Doc folder | location  |
+|:--|:--|:--|
 | `cashflows2017` |cashflows | tab 'Cash flows as at 31032017' |
