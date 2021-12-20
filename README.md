@@ -24,13 +24,13 @@ This is a work in progress
 
 | data | docs folder | location  |
 |:--|:--|:--|
-| `cashflows.../2017...` |cashflows | file `2017...`, tab 'Cash flows as at 31032017' |
-| `cashflows.../2020...` |cashflows | file `2020...`, table 1, page 2 |
-| `cpi_gilts.../2008...` |cpi_gilts | file '2008...', page 27 |
-| `cpi_gilts.../2011...` |cpi_gilts | file '2011...', page 16 |
-| `cpi_gilts.../2014...` |cpi_gilts | file '2014...', page 13 |
-| `cpi_gilts.../2017_Sept...` |cpi_gilts | file '2017_Sept...', table 16, page 51|
-| `cpi_gilts.../2017_Nov...` |cpi_gilts | file '2017_Nov...', table 7, page 11|
+| `cashflows.../2017...` |cashflows | file `2017...` tab 'Cash flows as at 31032017' |
+| `cashflows.../2020...` |cashflows | file `2020...` table 1 page 2 |
+| `cpi_gilts.../2008...` |cpi_gilts | file `2008...` page 27 |
+| `cpi_gilts.../2011...` |cpi_gilts | file `2011...` page 16 |
+| `cpi_gilts.../2014...` |cpi_gilts | file `2014...` page 13 |
+| `cpi_gilts.../2017_Sept...` |cpi_gilts | file `2017_Sept...` table 16 page 51|
+| `cpi_gilts.../2017_Nov...` |cpi_gilts | file `2017_Nov...` table 7 page 11|
 
 
 
