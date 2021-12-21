@@ -1,9 +1,9 @@
 # USS
-Data on the Universities Superannuation Scheme. Hoping to add some calculations and graphs
+Starting to upload data on the Universities Superannuation Scheme. Hoping to add some calculations and graphs
 
 ## Overview
 
-An attempt to put key USS data in one place.This is a work in progress
+An attempt to put key USS data in one place. This is a work in progress
 
 
 ## Folder and file organisation
