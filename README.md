@@ -22,13 +22,13 @@ All data are from USS, but some of it is hard to find or confusing. Here is a li
 
 | data | year | file and location of original data |
 |:--|:--|:--|
-| `cashflows` |2017 | Cashflows 2017 tab 'Cash flows as at 31032017' |
-| `cashflows` |2020 | Casfhlows 2020 table 1 page 2 |
-| `discount_rates` |2011 | Actuarial Valuation 2011 page 16|
-| `discount_rates` |2014 | Actuarial Valuation 2014 page 13|
-| `discount_rates` |2017 Sept | Technical Provisions Consultation 2017 September table 16 page 51|
-| `discount_rates` |2017 Nov | Technical Provisions Consultation 2017 November table 7 page 11|
-| `discount_rates` |2018 | Actuarial Valuation 2018 page 23|
+| cashflows |2017 | Cashflows 2017 tab 'Cash flows as at 31032017' |
+| cashflows |2020 | Casfhlows 2020 table 1 page 2 |
+| discount_rates |2011 | Actuarial Valuation 2011 page 16|
+| discount_rates |2014 | Actuarial Valuation 2014 page 13|
+| discount_rates |2017 Sept | Technical Provisions Consultation 2017 September table 16 page 51|
+| discount_rates |2017 Nov | Technical Provisions Consultation 2017 November table 7 page 11|
+| discount_rates |2018 | Actuarial Valuation 2018 page 23|
 | `cpi` |2008 | file Actuarial Valuation 2008 page 27 |
 | `cpi` |2011 | Actuarial Valuation 2011 page 16 |
 | `cpi` |2014 | Actuarial Valuation page 13 |
