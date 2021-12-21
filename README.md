@@ -20,19 +20,19 @@ An attempt to put key USS data in one place. This is a work in progress
 
 All data are from USS, but some of it is hard to find or confusing. Here is a list showing where the data have come from in each document. 
 
-| data | year | location  |
+| data | year | location of original data |
 |:--|:--|:--|
 | `cashflows` |2017 | Cashflows 2017 tab 'Cash flows as at 31032017' |
-|  |2020 | Casfhlows 2020 table 1 page 2 |
+| `cashflows` |2020 | Casfhlows 2020 table 1 page 2 |
 | `discount_rates` |2011 | Actuarial Valuation 2011 page 16|
-| `cpi_gilts` |2008 | file Actuarial Valuation 2008 page 27 |
-|  |2011 | Actuarial Valuation 2011 page 16 |
-|  |2014 | Actuarial Valuation page 13 |
-|  |2017 Sept | Technical Provisions Consultation 2017 September table 16 page 51|
-|  |2017 Nov | Technical Provisions Consultation 2017 November table 7 page 11|
-|  |2018| file `2018...` page 38 |
-| `cpi_gilts/2019...` |`actuarial_valuations` | file `2019...` page X jg to calc. CPI 2019 |
-|  |`cashflows` | file `2020...` table 1 page 2 |
+| `cpi` |2008 | file Actuarial Valuation 2008 page 27 |
+| `cpi` |2011 | Actuarial Valuation 2011 page 16 |
+| `cpi` |2014 | Actuarial Valuation page 13 |
+| `cpi` |2017 Sept | Technical Provisions Consultation 2017 September table 16 page 51|
+| `cpi` |2017 Nov | Technical Provisions Consultation 2017 November table 7 page 11|
+| `cpi` |2018| file `2018...` page 38 |
+| `cpi` | 2019 | Interim Actuarial Valuatoin 2019 page X |
+
 
 
 
