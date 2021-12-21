@@ -25,6 +25,7 @@ All data are from USS, but some of it is hard to find or confusing. Here is a li
 | `cashflows` |2017 | Cashflows 2017 tab 'Cash flows as at 31032017' |
 | `cashflows` |2020 | Casfhlows 2020 table 1 page 2 |
 | `discount_rates` |2011 | Actuarial Valuation 2011 page 16|
+| `discount_rates` |2014 | Actuarial Valuation 2014 page 13|
 | `cpi` |2008 | file Actuarial Valuation 2008 page 27 |
 | `cpi` |2011 | Actuarial Valuation 2011 page 16 |
 | `cpi` |2014 | Actuarial Valuation page 13 |
@@ -34,5 +35,6 @@ All data are from USS, but some of it is hard to find or confusing. Here is a li
 | `cpi` | 2019 | Interim Actuarial Valuatoin 2019 page X |
 
 
+Discount ratesActuarial Valuation 2014, p 13
 
 
