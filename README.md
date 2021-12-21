@@ -20,7 +20,7 @@ An attempt to put key USS data in one place. This is a work in progress
 
 All data are from USS, but some of it is hard to find or confusing. Here is a list showing where the data have come from in each document. 
 
-| data | year | location of original data |
+| data | year | file and location of original data |
 |:--|:--|:--|
 | `cashflows` |2017 | Cashflows 2017 tab 'Cash flows as at 31032017' |
 | `cashflows` |2020 | Casfhlows 2020 table 1 page 2 |
