@@ -29,6 +29,7 @@ All data are from USS, but some of it is hard to find or confusing. Here is a li
 | discount_rates |2017 Sept | Technical Provisions Consultation 2017 September table 16 page 51|
 | discount_rates |2017 Nov | Technical Provisions Consultation 2017 November table 7 page 11|
 | discount_rates |2018 | Actuarial Valuation 2018 page 23|
+| discount_rates |2019 | Interim Actuarial Valuation 2019 page 3|
 | `cpi` |2008 | file Actuarial Valuation 2008 page 27 |
 | `cpi` |2011 | Actuarial Valuation 2011 page 16 |
 | `cpi` |2014 | Actuarial Valuation page 13 |
@@ -38,6 +39,6 @@ All data are from USS, but some of it is hard to find or confusing. Here is a li
 | `cpi` | 2019 | Interim Actuarial Valuatoin 2019 page X |
 
 
-Discount ratesActuarial Valuation 2014, p 13
+
 
 
