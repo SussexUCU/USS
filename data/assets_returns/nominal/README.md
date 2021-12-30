@@ -3,24 +3,28 @@
 Notes accompanying file [investment_returns_nominal](https://github.com/SussexUCU/USS/blob/5163e039a625444a155c64ddaa5351beddc16e42/data/assets_returns/nominal/1987_2021_investment_returns_nominal.csv 'investment_returns_nominal')
 
 ## note 1
-1996 - 2013 investment returns reported December to December. 
-See p26 2013 report and accounts 'Investment performance shown below is on a calendar year rather than financial year basis.'
-2014 and 2015 investment returns given for March to March and December to December
-2016 onwards investment returns reported March to March 
+- Accounts 1996-2013 report investment returns from December to December. See p26 2013 report and accounts 'Investment performance shown below is on a calendar year rather than financial year basis.'
 
-In 2015 
-December to December 15.1%
-March to March 17.9%
+- Accounts 2014 and 2015 report investment returns for March to March and December to December
+
+- Accounts 2016 onwards report investment returns March to March 
+
+To account for this difference in reporting the following adjustment is made to the 2015 investment return. 
+
+Accounts 2015 report
+- December to December 15.1%
+- March to March 17.9%
 See page 30 report and accounts 2015
 
-To calculate investment returns from December 2014 to March 2015 take monthly from both sets by raising to power 1/12. 
-Dec-Dec 1.3817%
-Mar-Mar 1.1788%
+So to calculate investment returns from December 2014 to March 2015 
+1. take monthly from both sets by raising to power 1/12. 
+Dec-Dec monthly 1.3817%
+Mar-Mar montly 1.1788%
 
-Average these monthly return from Dec-Dec and Mar-Mar
+2. average these monthly return from Dec-Dec and Mar-Mar
 1.2803%
 
-Raise to to the power of 15. 
+3. Raise to to the power of 15. 
 21.0240%
 
 
