@@ -39,3 +39,16 @@ All the data on CPI and gilts projections from USS valuations are in the nominal
 | 2017 September | blah |   
 | 2018 | blah |   
 | 2020 | blah |   
+
+## `discount_rates`
+| basis | year | source |
+|:--|:--|:--| 
+| `nominal`| 1987-2021 |see each .csv file in the `assets_returns` folder for page of relevant USS Annual Report and Account filed in [docs/reports_accounts/](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
+| `cpi`| 1987-2021 | cpi-basis values of assets and investment returns are derived from USS nominal-basis values using ONS historic CPI values|   
+
+## `ons`
+| basis | year | source |
+|:--|:--|:--| 
+| `nominal`| 1987-2021 |see each .csv file in the `assets_returns` folder for page of relevant USS Annual Report and Account filed in [docs/reports_accounts/](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
+| `cpi`| 1987-2021 | cpi-basis values of assets and investment returns are derived from USS nominal-basis values using ONS historic CPI values|   
+
