@@ -1,6 +1,6 @@
-## Sources for data files 
+## Sources for data
 
-Sources for all data in USS documents. Organised by data folder, then basis (nominal, CPI, or gilts) and then by year.
+Sources for data is mostly direct from USS documents. These sources detailed below, organised by data folder, then basis (nominal, CPI, or gilts) and then by year.
 
 
 | Folder | basis | year | source |
@@ -12,9 +12,9 @@ Sources for all data in USS documents. Organised by data folder, then basis (nom
 | `best_estimates`| `cpi`| 2020 | estimated from USS Document likely outcome of 2021 valuation - JG ask list if anyone can knows better source | 
 | `best_estimates`| `cpi`| 2021 | estimated from USS Document likely outcome of 2021 valuation - JG ask list if anyone can knows source | 
 | `best_estimates`| `nominal`| 2017, 2018, 2020, 2021 |derived from nominal using USS CPI projections for relevant year | 
-| `cashflows`| `nominal`| 2017 | stuff |   
-| `cashflows`| `nominal`| 2020 | stuff |   
-| `cashflows`| `cpi`| 2017, 2020 | derived from nominal using USS CPI projections for relevant year |   
+| `cashflows`| `nominal`| 2017 | copied from tab 'Cash flows as at 31032017' in spreadsheet by Sam Marsh filed in [data/cashflows](https://github.com/SussexUCU/USS/tree/main/docs/cashflows 'cashflows') |   
+| `cashflows`| `nominal`| 2020 | copied from USS website and filed in [data/cashflows](https://github.com/SussexUCU/USS/tree/main/docs/cashflows 'cashflows') |   
+| `cashflows`| `cpi`| 2017, 2020 | cpi-basis values derived from nominal-basis values using USS CPI projections for relevant year (all also in `data` folder and detailed below |   
 | `cpi_gilts`| nominal| 2008 | blah |   
 | `cpi_gilts`| nominal| 2011 | blah |   
 | `cpi_gilts`| nominal| 2014 | blah |   
