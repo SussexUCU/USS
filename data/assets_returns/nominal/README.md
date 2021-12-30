@@ -7,7 +7,7 @@ Notes accompanying file [investment_returns_nominal](https://github.com/SussexUC
 There is a problem in the reporting of investment returns in that: 
 - Accounts 1996-2013 report investment returns from December to December. See p26 2013 report and accounts 'Investment performance shown below is on a calendar year rather than financial year basis.'
 
-- Accounts 2014 and 2015 report investment returns for March to March and December to December
+- Accounts 2014 and 2015 report investment returns for March to March and December to December. See page 30 report and accounts 2015.
 
 - Accounts 2016 onwards report investment returns March to March 
 
