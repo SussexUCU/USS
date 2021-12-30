@@ -25,7 +25,7 @@ Sources for data is mostly direct from USS documents. These sources detailed bel
 |:--|:--|:--| 
 | `nominal`| 2017 | copied from tab 'Cash flows as at 31032017' in spreadsheet by Sam Marsh filed in [docs/cashflows](https://github.com/SussexUCU/USS/tree/main/docs/cashflows 'cashflows') |   
 | `nominal`| 2020 | copied from USS website and filed in [docs/cashflows](https://github.com/SussexUCU/USS/tree/main/docs/cashflows 'cashflows') |   
-| `cpi`| 2017, 2020 | cpi-basis values derived from nominal-basis values using USS CPI projections for relevant year (all also in `data` folder and detailed below |   
+| `cpi`| 2017, 2020 | cpi-basis values derived from nominal-basis values using USS CPI projections for relevant year (all CPI values in `data/cpi_gilts` folder and detailed below |   
 
 ## `cpi_gilts`
 
@@ -37,7 +37,7 @@ All the data on CPI and gilts projections from USS valuations are in the nominal
 | 2014 | see page 13 of 2014 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |   
 | 2017 November | see page 13, table 22 in November 2017 Technical Provisions Consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
 | 2017 September | see page 51, table 16 in September 2017 Technical Provisions Consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
-| 2018 | blah ile 2018... page 38 |   
+| 2018 | see page 38 of 2018 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |   
 | 2020 | blah Interim Actuarial Valuatoin 2019 page X |   
 
 ## `discount_rates`
