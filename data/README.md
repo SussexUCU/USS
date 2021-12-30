@@ -8,9 +8,9 @@ Sources for all data in USS documents. Organised by data folder, then basis (nom
 | `assets_returns`| `nominal`| 1987-2021 |see each csv file in `assets_returns` for page of relevant USS Annual Report and Account filed in [docs/reports_accounts/](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
 | `assets_returns`| `cpi`| 1987-2021 | cpi-basis values derived from nominal-basis values using ONS historic CPI values|   
 | `best_estimates`| `cpi`| 2017 November |page 18 of 2017 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "2017 valuation") |  
-| `best_estimates`| `cpi`| 2018 |to do |   
-| `best_estimates`| `cpi`| 2020 |to do | 
-| `best_estimates`| `cpi`| 2021 |to do | 
+| `best_estimates`| `cpi`| 2018 | page 26 of 2018 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "2017 valuation") |   
+| `best_estimates`| `cpi`| 2020 | estimated from USS Document likely outcome of 2021 valuation - JG ask list if anyone can knows better source | 
+| `best_estimates`| `cpi`| 2021 | estimated from USS Document likely outcome of 2021 valuation - JG ask list if anyone can knows source | 
 | `best_estimates`| `nominal`| 2017, 2018, 2020, 2021 |derived from nominal using USS CPI projections for relevant year | 
 | `cashflows`| `nominal`| 2017 | stuff |   
 | `cashflows`| `nominal`| 2020 | stuff |   
