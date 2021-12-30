@@ -30,12 +30,11 @@ Mar-Mar montly 1.1788%
 
 
 ## note 2
-1987-1995
-The 1996 accounts reports page 14 
-  'The 10 year return for the fund was 13.2% per annum, 
-  just ahead of the average fund and, again, 
-  well ahead of growth in average earnings of 6.5% and retail prices of 4.6% over the same period.'
-The 1996 accounts reports page 14
-  18.4% return for 1996
+
+The 1996 report and accounts is the earliest available document, but it is possible to get earlier information on assets and investment returns. 
+
+The 1996 accounts reports page 14 'The 10 year return for the fund was 13.2% per annum, just ahead of the average fund and, again, well ahead of growth in average earnings of 6.5% and retail prices of 4.6% over the same period.'
+
+The 1996 accounts reports page 14 an 18.4% return for 1996
   
-Using the annualised figure of 13.2% the previous 9 years would average 12.6%
+Using the annualised figure of 13.2% and the 1996 figure of 18.4% the previous 9 years would average 12.6%
