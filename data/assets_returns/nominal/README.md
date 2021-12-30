@@ -1,6 +1,6 @@
 # Notes on investment returns 
 
-([foo]http://github.com/ 'investment_returns_nominal')
+Notes accompanying file [investment_returns_nominal](https://github.com/SussexUCU/USS/blob/5163e039a625444a155c64ddaa5351beddc16e42/data/assets_returns/nominal/1987_2021_investment_returns_nominal.csv 'investment_returns_nominal')
 
 ## note 1
 1996 - 2013 investment returns reported December to December. 
