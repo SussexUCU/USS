@@ -1,6 +1,6 @@
 # Notes on investment returns 
 
-([foo] http://github.com/ 'investment_returns_nominal')
+([foo]http://github.com/ 'investment_returns_nominal')
 
 ## note 1
 1996 - 2013 investment returns reported December to December. 
