@@ -32,13 +32,13 @@ Sources for data is mostly direct from USS documents. These sources detailed bel
 All the data on CPI and gilts projections from USS valuations are in the nominal-basis.
 | year | source |
 |:--|:--| 
-| 2008 | blah |   
-| 2011 | blah |   
-| 2014 | blah |   
-| 2017 November | blah |   
-| 2017 September | blah |   
-| 2018 | blah |   
-| 2020 | blah |   
+| 2008 | file Actuarial Valuation 2008 page 27 |   
+| 2011 | Actuarial Valuation 2011 page 16 |   
+| 2014 | Actuarial Valuation page 13 |   
+| 2017 November | Technical Provisions Consultation 2017 November table 7 page 11 Technical Provisions Consultation 2017 September table 16 page 51 |   
+| 2017 September | Technical Provisions Consultation 2017 September table 16 page 51 |   
+| 2018 | blah ile 2018... page 38 |   
+| 2020 | blah Interim Actuarial Valuatoin 2019 page X |   
 
 ## `discount_rates`
 | basis | year | source |
