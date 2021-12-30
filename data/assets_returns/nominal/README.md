@@ -26,8 +26,7 @@ Mar-Mar montly 1.1788%
 2. average these monthly return from Dec-Dec and Mar-Mar
 1.2803%
 
-3. Raise to to the power of 15. 
-21.0240%
+3. Raise to to the power of 15 to give 2015 investment return of 21.0240%
 
 
 ## note 2
