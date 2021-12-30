@@ -1,6 +1,6 @@
-#Notes on Investment_returns
+# Notes on Investment_returns
 
-note 1
+## note 1
 1996 - 2013 investment returns reported December to December. 
 See p26 2013 report and accounts 'Investment performance shown below is on a calendar year rather than financial year basis.'
 2014 and 2015 investment returns given for March to March and December to December
@@ -22,7 +22,7 @@ Raise to to the power of 15.
 21.0240%
 
 
-note 2
+## note 2
 1987-1995
 The 1996 accounts reports page 14 
   'The 10 year return for the fund was 13.2% per annum, 
