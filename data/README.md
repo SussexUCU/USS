@@ -6,7 +6,7 @@ Sources for data is mostly direct from USS documents. These sources detailed bel
 ## `assets_returns`
 | basis | year | source |
 |:--|:--|:--| 
-| `nominal`| 1987-2021 |see each csv file in `assets_returns` for page of relevant USS Annual Report and Account filed in [docs/reports_accounts/](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
+| `nominal`| 1987-2021 |see each .csv file in the `assets_returns` folder for page of relevant USS Annual Report and Account filed in [docs/reports_accounts/](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
 | `cpi`| 1987-2021 | cpi-basis values derived from nominal-basis values using ONS historic CPI values|   
 
 
