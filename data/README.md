@@ -15,8 +15,8 @@ Sources for data is mostly direct from USS documents. These sources detailed bel
 |:--|:--|:--| 
 | `cpi`| 2017 November |page 18 of 2017 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |  
 | `cpi`| 2018 | page 26 of 2018 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "2017 valuation") |   
-| `cpi`| 2020 | estimated from USS Document likely outcome of 2021 valuation - JG ask list if anyone can knows better source | 
-| `cpi`| 2021 | estimated from USS Document likely outcome of 2021 valuation - JG ask list if anyone can knows source | 
+| `cpi`| 2020 | estimated from USS Document likely outcome of 2021 valuation - JG ask list if anyone knows better source | 
+| `cpi`| 2021 | estimated from USS Document likely outcome of 2021 valuation - JG ask list if anyone knows source | 
 | `nominal`| 2017, 2018, 2020, 2021 |derived from nominal using USS CPI projections for relevant year | 
 
 
