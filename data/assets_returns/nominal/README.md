@@ -3,6 +3,8 @@
 Notes accompanying file [investment_returns_nominal](https://github.com/SussexUCU/USS/blob/5163e039a625444a155c64ddaa5351beddc16e42/data/assets_returns/nominal/1987_2021_investment_returns_nominal.csv 'investment_returns_nominal')
 
 ## note 1
+
+There is a problem in the reporting of investment returns in that: 
 - Accounts 1996-2013 report investment returns from December to December. See p26 2013 report and accounts 'Investment performance shown below is on a calendar year rather than financial year basis.'
 
 - Accounts 2014 and 2015 report investment returns for March to March and December to December
