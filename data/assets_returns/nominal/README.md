@@ -11,12 +11,12 @@ Notes accompanying file [investment_returns_nominal](https://github.com/SussexUC
 
 To account for this difference in reporting the following adjustment is made to the 2015 investment return. 
 
-Accounts 2015 report
+Using accounts 2015 which report
 - December to December 15.1%
 - March to March 17.9%
 See page 30 report and accounts 2015
 
-So to calculate investment returns from December 2014 to March 2015 
+Calculate investment returns from December 2014 to March 2015 
 1. take monthly from both sets by raising to power 1/12. 
 Dec-Dec monthly 1.3817%
 Mar-Mar montly 1.1788%
