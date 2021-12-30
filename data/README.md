@@ -38,7 +38,7 @@ All the data on CPI and gilts projections from USS valuations are in the nominal
 | 2017 November | see page 13, table 22 in November 2017 Technical Provisions Consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
 | 2017 September | see page 51, table 16 in September 2017 Technical Provisions Consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
 | 2018 | see page 38 of 2018 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |   
-| 2020 | blah Interim Actuarial Valuatoin 2019 page X |   
+| 2020 | see page 4, table 2 of 2020 cashflows copied from USS website and filed in [docs/cashflows](https://github.com/SussexUCU/USS/tree/main/docs/cashflows 'cashflows') |   
 
 ## `discount_rates`
 | basis | year | source |
