@@ -28,12 +28,14 @@ Sources for data is mostly direct from USS documents. These sources detailed bel
 | `cpi`| 2017, 2020 | cpi-basis values derived from nominal-basis values using USS CPI projections for relevant year (all also in `data` folder and detailed below |   
 
 ## `cpi_gilts`
- | basis | year | source |
-|:--|:--|:--| 
-| nominal| 2008 | blah |   
-| nominal| 2011 | blah |   
-| nominal| 2014 | blah |   
-| nominal| 2017 November | blah |   
-| nominal| 2017 September | blah |   
-| nominal| 2018 | blah |   
-| nominal| 2020 | blah |   
+
+All the data on CPI and gilts projections from USS valuations are in the nominal-basis.
+| year | source |
+|:--|:--| 
+| 2008 | blah |   
+| 2011 | blah |   
+| 2014 | blah |   
+| 2017 November | blah |   
+| 2017 September | blah |   
+| 2018 | blah |   
+| 2020 | blah |   
