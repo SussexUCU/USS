@@ -46,7 +46,7 @@ At each valuation USS state their predictions for how CPI will grown in the futu
 
 ## `discount_rates`
 
-These are rates that future cashflows should be discounted at (on a prudent basis) to calculate the USS quoted 'deficit'. They are some quoted confidence level (between 65% to 85%) of the projected asset distribution that gives the USS 'best-estimates' above. USS generally quote discount rates in multiple documents and the data can be written as (i) yearly discount rates in data tables or (ii) formulae for deriving yearl discount rates (iii) single equivalent discount rates that represent some average of the yearly discount rates. These three methods often have small differences in third or higher significant figures. 
+These are rates that future cashflows should be discounted at (on a prudent basis) to calculate the USS quoted 'deficit'. These discount rates are some quoted confidence level (between around 65% to 90%) of the projected asset distribution that also gives the USS 'best-estimates' quoted above. USS generally quote discount rates in multiple documents and the data can be quoted in three ways (i) yearly discount rates in data tables or (ii) formulae for deriving yearly discount rates (iii) single equivalent discount rates (SEDR) that represent some average of the yearly discount rates. These three methods often have small differences in third or higher significant figures. 
 
 | basis | year | source |
 |:--|:--|:--| 
