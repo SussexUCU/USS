@@ -54,11 +54,11 @@ These are rates that future cashflows should be discounted at (on a prudent basi
 | `cpi`| 2011 | derived from page 16 of 2011 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|   
 | `nominal`| 2014 | copied direct from page 13, table A.2 of 2014 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|   
 | `cpi`| 2014 | derived from page 13, table A.2 of 2014 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|   
-| `nominal`| 2017 November |copied direct from page 11, table 7 of consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
-| `cpi`| 2017 November | derived from page 11, table 7 of consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
-| `nominal`| 2017 September | copied direct from page 51, table 16 of consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations") |   
-| `cpi`| 2017 September | derived from page 51, table 16 of consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
-| `nominal`| 2018 |blah |   
+| `nominal`| 2017 November |copied direct from page 11, table 7 of 2017 November consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
+| `cpi`| 2017 November | derived from page 11, table 7 of 2017 November consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
+| `nominal`| 2017 September | copied direct from page 51, table 16 of 2017 September consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations") |   
+| `cpi`| 2017 September | derived from page 51, table 16 of 2017 September consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
+| `nominal`| 2018 |copied direct from page 23 of 2018 valuation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations") |   
 | `cpi`| 2018 | blah|  
 | `nominal`| 2019 |blah |   
 | `cpi`| 2019 | Interim Actuarial Valuation 2019 page 3|
