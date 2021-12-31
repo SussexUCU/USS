@@ -50,8 +50,23 @@ These are rates that future cashflows should be discounted at (on a prudent basi
 
 | basis | year | source |
 |:--|:--|:--| 
-| `nominal`| blah |blah |   
-| `cpi`| blah | blah|   
+| `nominal`| 2011 |blah |   
+| `cpi`| 2011 | blah|   
+| `nominal`| 2014 |blah |   
+| `cpi`| 2014 | blah|   
+| `nominal`| 2017 November |blah |   
+| `cpi`| 2017 November | blah|   
+| `nominal`| 2017 September |blah |   
+| `cpi`| 2017 September | blah|   
+| `nominal`| 2018 |blah |   
+| `cpi`| 2018 | blah|  
+| `nominal`| 2019 |blah |   
+| `cpi`| 2019 | blah|
+| `nominal`| 2020 with UUK cuts |blah |   
+| `cpi`| 2020 maintain benefits | blah|
+| `nominal`| USS proposed 2021 with UUK cuts |blah |   
+| `cpi`| proposed 2021 maintain benefits | blah|
+
 
 ## `ons`
 | basis | year | source |
