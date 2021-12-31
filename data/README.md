@@ -63,9 +63,9 @@ These are rates that future cashflows should be discounted at (on a prudent basi
 | `nominal`| 2019 |derived from page 3 of 2019 interim valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |   
 | `cpi`| 2019 | copied direct from page 3 of 2019 interim valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|
 | `nominal`| 2020 with UUK cuts |blah |   
-| `cpi`| 2020 maintain benefits | blah|
+| `cpi`| 2020 maintaining benefits | blah|
 | `nominal`| USS proposed 2021 with UUK cuts |blah |   
-| `cpi`| proposed 2021 maintain benefits | blah|
+| `cpi`| USS proposed 2021 maintaining benefits | blah|
 
 
 
