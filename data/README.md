@@ -33,8 +33,7 @@ These are the projected amounts that USS expects to pay as a result of the DB or
 | `cpi`| 2017, 2020 | derived cpi-basis values from nominal-basis values using USS CPI projections for relevant year (all CPI values in `data/cpi_gilts` folder and detailed below |   
 
 ## `cpi_gilts`
-
-All the data on CPI and gilts projections from USS valuations are in the nominal-basis.
+At each valuation USS state their predictions for how CPI will grown in the future. They also state their predictions for returns on government gilts. These seem to be generally inline with Bank of England predictions on the valuation date. All the data on CPI and gilts projections from USS valuations are in the nominal-basis.
 | year | source |
 |:--|:--| 
 | 2008 | direct from page 27 of 2018 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |   
@@ -47,7 +46,7 @@ All the data on CPI and gilts projections from USS valuations are in the nominal
 
 ## `discount_rates`
 
-USS generally quote discount rates in multiple places. The data can be written as i) yearly discount rates in data tables 2) formulae for deriving yearl discount rates 3) single equivalent discount rates that represent some average of the yearly discount rates. These three methods often have small differences in third or higher significant figures. 
+These are rates that future cashflows should be discounted at (on a prudent basis) to calculate the USS quoted 'deficit'. They are some quoted confidence level (between 65% to 85%) of the projected asset distribution that gives the USS 'best-estimates' above. USS generally quote discount rates in multiple documents and the data can be written as (i) yearly discount rates in data tables or (ii) formulae for deriving yearl discount rates (iii) single equivalent discount rates that represent some average of the yearly discount rates. These three methods often have small differences in third or higher significant figures. 
 
 | basis | year | source |
 |:--|:--|:--| 
