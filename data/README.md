@@ -8,7 +8,7 @@ The tables are organised by data folder, then basis (nominal, CPI, or gilts) and
 ## `assets_returns`
 | basis | year | source |
 |:--|:--|:--| 
-| `nominal`| 1987-2021 |direct from Annual Report and Accounts. See each .csv file in the `assets_returns` folder for page of relevant USS Annual Report and Account filed in [docs/reports_accounts/](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
+| `nominal`| 1987-2021 |direct from Annual Report and Accounts. See each .csv file in the `assets_returns` data folder above for page of relevant USS Annual Report and Account filed in [docs/reports_accounts/](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
 | `cpi`| 1987-2021 | derived cpi-basis values of assets and investment returns from USS nominal-basis values using ONS historic CPI values|   
 
 
