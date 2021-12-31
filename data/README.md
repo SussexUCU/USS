@@ -1,7 +1,7 @@
 # Sources for data
 
-Sources for data are mostly copied direct from USS documents or derived readily from data in USS documents. In a few cases they are estimated from a wider range of USS parameters. 
-The location of these sources are detailed in the tables below. 
+Sources for data are mostly copied direct from USS documents or derived in a straight-forward way from data in USS documents. In a few cases they are estimated from a wider range of USS parameters. 
+The location of these sources for each data file are detailed in the tables below. 
 The tables are organised by data folder, then basis (nominal, CPI, or gilts) and then by year.
 
 
