@@ -10,7 +10,7 @@ These are the yearly USS reported assets and investment returns in the DB or inc
 | basis | year | source |
 |:--|:--|:--| 
 | `nominal`| 1987-2021 |copied direct from Annual Report and Accounts. See each .csv file in the `assets_returns` data folder above for page of relevant USS Annual Report and Account filed in [docs/reports_accounts/](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
-| `cpi`| 1987-2021 | derived cpi-basis values of assets and investment returns from USS nominal-basis values using ONS historic CPI values|   
+| `cpi`| 1987-2021 | derived cpi-basis values of assets and investment returns from USS nominal-basis values using ONS historic CPI values filed in [data/ons](https://github.com/SussexUCU/USS/tree/main/data/ons")|   
 
 
 ## `best_estimates`
@@ -21,7 +21,7 @@ These are the USS 'best-estimates' of projected returns on assets for the DB or 
 | `cpi`| 2018 | copied direct from page 26 of 2018 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |   
 | `cpi`| 2020 | estimated from USS Document likely outcome of 2021 valuation - JG ask list if anyone can knows better source | 
 | `cpi`| 2021 | estimated from USS Document likely outcome of 2021 valuation - JG ask list if anyone can knows source | 
-| `nominal`| 2017, 2018, 2020, 2021 |derived nominal-basis values using cpi-basis values and USS CPI projections for relevant year | 
+| `nominal`| 2017, 2018, 2020, 2021 |derived nominal-basis values using cpi-basis values and USS CPI projections for relevant year filed in [data/cpi_gilts](https://github.com/SussexUCU/USS/tree/main/data/cpi_gilts 'cpi_gilts') | 
 
 
 ## `cashflows`
