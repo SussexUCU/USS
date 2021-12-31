@@ -50,12 +50,12 @@ These are rates that future cashflows should be discounted at (on a prudent basi
 
 | basis | year | source |
 |:--|:--|:--| 
-| `nominal`| 2011 |copied direct from page 16 of 2011 valuation [docs/actuarial_valuations] (https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|   
-| `cpi`| 2011 | derived from page 16 of 2011 valuation [docs/actuarial_valuations] (https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|   
-| `nominal`| 2014 | Actuarial Valuation 2014 page 13|   
-| `cpi`| 2014 | blah|   
-| `nominal`| 2017 November |Technical Provisions Consultation 2017 November table 7 page 11 |   
-| `cpi`| 2017 November | blah|   
+| `nominal`| 2011 |copied direct from page 16, table A.2 of 2011 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|   
+| `cpi`| 2011 | derived from page 16 of 2011 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|   
+| `nominal`| 2014 | copied direct from page 13, table A.2 of 2014 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|   
+| `cpi`| 2014 | derived from page 13, table A.2 of 2014 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|   
+| `nominal`| 2017 November |copied direct from page 11, table 7 of consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
+| `cpi`| 2017 November | derived from page 11, table 7 of consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
 | `nominal`| 2017 September |blah |   
 | `cpi`| 2017 September | Technical Provisions Consultation 2017 September table 16 page 51|   
 | `nominal`| 2018 |blah |   
