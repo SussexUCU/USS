@@ -46,7 +46,7 @@ At each valuation USS state their predictions for how CPI will grown in the futu
 
 ## `discount_rates`
 
-These are rates that future cashflows should be discounted at (on a prudent basis) to calculate the USS quoted 'deficit'. These discount rates are some quoted confidence level (between around 65% to 90%) of the projected asset distribution that also gives the USS 'best-estimates' quoted above. USS generally quote discount rates in multiple documents and the data can be quoted in three ways (i) yearly discount rates in data tables or (ii) formulae for deriving yearly discount rates (iii) single equivalent discount rates (SEDR) that represent some average of the yearly discount rates. These three methods can have differences in third or higher significant figures. 
+These are rates that future cashflows should be discounted at (on a prudent basis) to calculate the USS quoted 'deficit'. These discount rates are usually an annualised value at a quoted confidence level (between around 65% to 90%) of the projected asset distribution, these asset projections also give the USS 'best-estimates' quoted above. USS generally quote discount rates in multiple documents and the data can be quoted in three ways (i) yearly discount rates in data tables or (ii) formulae for deriving yearly discount rates (iii) single equivalent discount rates (SEDR) over a 50 year period that represent some average of the yearly discount rates. These three methods can have differences in third or higher significant figures. Where possible data are taken from the actual valuations. 
 
 | basis | year | source |
 |:--|:--|:--| 
@@ -56,8 +56,8 @@ These are rates that future cashflows should be discounted at (on a prudent basi
 | `cpi`| 2014 | derived from page 13, table A.2 of 2014 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|   
 | `nominal`| 2017 November |copied direct from page 11, table 7 of consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
 | `cpi`| 2017 November | derived from page 11, table 7 of consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
-| `nominal`| 2017 September |blah |   
-| `cpi`| 2017 September | Technical Provisions Consultation 2017 September table 16 page 51|   
+| `nominal`| 2017 September | copied direct from page 51, table 16 of consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations") |   
+| `cpi`| 2017 September | derived from page 51, table 16 of consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
 | `nominal`| 2018 |blah |   
 | `cpi`| 2018 | blah|  
 | `nominal`| 2019 |blah |   
