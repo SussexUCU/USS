@@ -62,10 +62,10 @@ These are rates that future cashflows should be discounted at (on a prudent basi
 | `cpi`| 2018 | derived from page 23 of 2018 valuation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations") |  
 | `nominal`| 2019 |derived from page 3 of 2019 interim valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |   
 | `cpi`| 2019 | copied direct from page 3 of 2019 interim valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations")|
-| `nominal`| 2020 with UUK cuts |blah |   
-| `cpi`| 2020 maintaining benefits | blah|
-| `nominal`| USS proposed 2021 with UUK cuts |blah |   
-| `cpi`| USS proposed 2021 maintaining benefits | blah|
+| `nominal`| 2020 with UUK cuts |estimated from gilts-basis value on page 13 of the USS document 'The likely outcome of a 2021 valuation' in [docs/2020_extra_docs](https://github.com/SussexUCU/USS/tree/main/docs/2020_extra_docs  "2020_extra_docs") |   
+| `cpi`| 2020 maintaining benefits | estimated from gilts-basis value on page 13 of the USS document 'The likely outcome of a 2021 valuation' in [docs/2020_extra_docs](https://github.com/SussexUCU/USS/tree/main/docs/2020_extra_docs  "2020_extra_docs")|
+| `nominal`| USS proposed 2021 with UUK cuts |estimated from gilts-basis value on page 13 of the USS document 'The likely outcome of a 2021 valuation' in [docs/2020_extra_docs](https://github.com/SussexUCU/USS/tree/main/docs/2020_extra_docs  "2020_extra_docs") |   
+| `cpi`| USS proposed 2021 maintaining benefits | estimated from gilts-basis value on page 13 of the USS document 'The likely outcome of a 2021 valuation' in [docs/2020_extra_docs](https://github.com/SussexUCU/USS/tree/main/docs/2020_extra_docs  "2020_extra_docs")|
 
 
 
