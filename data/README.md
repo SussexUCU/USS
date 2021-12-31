@@ -1,8 +1,8 @@
 # Sources for data
 
-Sources for data are direct from USS documents. 
+Sources for data are mostly direct from USS documents or derived from USS documents by a basis transformation. 
 The location of these sources are detailed in the tables below. 
-The tables are organised by data folder, then basis (nominal, CPI, or gilts) and then by year.
+The tables are organised by data folder, then basis (nominal, CPI, or gilts) and then by year. They state whether the data are direct from USS, derived, or estimated.
 
 
 ## `assets_returns`
