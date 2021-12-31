@@ -6,6 +6,7 @@ The tables are organised by data folder, then basis (nominal, CPI, or gilts) and
 
 
 ## `assets_returns`
+These are the yearly USS reported assets and investment returns in the DB or income builder part of the pension fund. All given in the year they are reported meaning they are in the nominal-basis. 
 | basis | year | source |
 |:--|:--|:--| 
 | `nominal`| 1987-2021 |direct from Annual Report and Accounts. See each .csv file in the `assets_returns` data folder above for page of relevant USS Annual Report and Account filed in [docs/reports_accounts/](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
@@ -13,6 +14,7 @@ The tables are organised by data folder, then basis (nominal, CPI, or gilts) and
 
 
 ## `best_estimates`
+These are the USS 'best-estimates' of projected returns on assets for the DB or income builder part of the pension fund. They can be given in cpi-basis, nominal-basis or gilts-basis. Unable to find best-estimates earlier than 2017.
 | basis | year | source |
 |:--|:--|:--| 
 | `cpi`| 2017 November |direct from page 18 of 2017 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |  
@@ -23,6 +25,7 @@ The tables are organised by data folder, then basis (nominal, CPI, or gilts) and
 
 
 ## `cashflows`
+These are the projected amounts that USS expects to pay as a result of the DB or income builder pension promises built up prior to the valuation date. They are quoted as yearly amounts and are usually quoted in the nominal-basis, which is strange as they should be invarient in the cpi-basis as they are pegged to cpi (that is pensions should grow roughly in line with cpi). Unable to find any cashflows except for 2017 and 2020. However, both these cashflows give data for first: pensions promised up to the valuation date (these are strongly protected and are used to calculate the USS quoted 'deficit') and second: pensions predicted to be promised as a result of payment that will be made by USS members one year into the future (these are not strongly protected and are used to calculate the future service costs). Because these extra one-year ahead cashflows are given it is possible to estimate 2018 and 2021 casfhlows. 
 | basis | year | source |
 |:--|:--|:--| 
 | `nominal`| 2017 | direct from tab 'Cash flows as at 31032017' in spreadsheet by Sam Marsh filed in [docs/cashflows](https://github.com/SussexUCU/USS/tree/main/docs/cashflows 'cashflows') |   
@@ -43,6 +46,9 @@ All the data on CPI and gilts projections from USS valuations are in the nominal
 | 2020 | direct from page 4, table 2 of USS website .pdf of 2020 cashflows and filed in [docs/cashflows](https://github.com/SussexUCU/USS/tree/main/docs/cashflows 'cashflows') |   
 
 ## `discount_rates`
+
+USS generally quote discount rates in multiple places. The data can be written as i) yearly discount rates in data tables 2) formulae for deriving yearl discount rates 3) single equivalent discount rates that represent some average of the yearly discount rates. These three methods often have small differences in third or higher significant figures. 
+
 | basis | year | source |
 |:--|:--|:--| 
 | `nominal`| blah |blah |   
