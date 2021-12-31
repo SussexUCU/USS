@@ -30,7 +30,7 @@ These are the projected amounts that USS expects to pay as a result of the DB or
 |:--|:--|:--| 
 | `nominal`| 2017 | copied direct from tab 'Cash flows as at 31032017' in spreadsheet by Sam Marsh filed in [docs/cashflows](https://github.com/SussexUCU/USS/tree/main/docs/cashflows 'cashflows') |   
 | `nominal`| 2020 | copied direct from page 2, table 1 of USS website .pdf of 2020 cashflows and filed in [docs/cashflows](https://github.com/SussexUCU/USS/tree/main/docs/cashflows 'cashflows') |   
-| `cpi`| 2017, 2020 | derived cpi-basis values from nominal-basis values using USS CPI projections for relevant year (all CPI values in `data/cpi_gilts` folder and detailed below |   
+| `cpi`| 2017, 2020 | derived cpi-basis values from nominal-basis values using USS CPI projections for relevant year (all CPI values in [data/cpi_gilts](https://github.com/SussexUCU/USS/tree/main/data/cpi_gilts 'cpi_gilts') folder and detailed below |   
 
 ## `cpi_gilts`
 At each valuation USS state their predictions for how CPI will grown in the future. They also state their predictions for returns on government gilts. These seem to be generally inline with Bank of England predictions on the valuation date. All the data on CPI and gilts projections from USS valuations are in the nominal-basis.
@@ -59,7 +59,7 @@ These are rates that future cashflows should be discounted at (on a prudent basi
 | `nominal`| 2017 September | copied direct from page 51, table 16 of 2017 September consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations") |   
 | `cpi`| 2017 September | derived from page 51, table 16 of 2017 September consultation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations")|   
 | `nominal`| 2018 |copied direct from page 23 of 2018 valuation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations") |   
-| `cpi`| 2018 | blah|  
+| `cpi`| 2018 | derived from page 23 of 2018 valuation in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations") |  
 | `nominal`| 2019 |blah |   
 | `cpi`| 2019 | Interim Actuarial Valuation 2019 page 3|
 | `nominal`| 2020 with UUK cuts |blah |   
