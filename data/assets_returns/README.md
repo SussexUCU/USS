@@ -1,6 +1,6 @@
 # Notes on investment returns 
 
-Notes accompanying files in `nominal` folder. 
+Notes accompanying files in `data/assets_returns/nominal` folder above. 
 
 ## note 1
 
