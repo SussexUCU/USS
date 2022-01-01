@@ -1,0 +1,38 @@
+﻿Year,Month,"Annual investment return, see notes for calculation of 1987-1995 and 2014-2015 cross-over change from Dec-Dec to Mar-Mar"," ""reference in annual report and accounts"""
+1987,12,0.126,p14 1996 see note2 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+1988,12,0.126,p14 1996 see note2 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+1989,12,0.126,p14 1996 see note2 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+1990,12,0.126,p14 1996 see note2 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+1991,12,0.126,p14 1996 see note2 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+1992,12,0.126,p14 1996 see note2 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+1993,12,0.126,p14 1996 see note2 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+1994,12,0.126,p14 1996 see note2 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+1995,12,0.126,p14 1996 see note2 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+1996,12,0.184,p14
+1997,12,0.108,p3
+1998,12,0.175,p3
+1999,12,0.126,p19
+2000,12,0.259,p16
+2001,12,-0.036,p2
+2002,12,-0.101,p2
+2003,12,-0.167,p2
+2004,12,0.186,p2
+2005,12,0.089,p2
+2006,12,0.24,p2
+2007,12,0.099,p2
+2008,12,0.075,p2
+2009,12,-0.272,p2
+2010,12,0.207,p4
+2011,12,0.117,p4
+2012,12,0.0032,p5
+2013,12,0.114,p26
+2014,3,0.076,p28 see note1 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+2014,12,0.128,p28 see note1 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+2015,3,0.179,p30 see note1 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+2015,12,0.151,p30 see note1 https://github.com/SussexUCU/USS/blob/main/data/assets_returns/nominal/notes_investment_returns
+2016,3,0.0162,p5
+2017,3,0.201,p1
+2018,3,0.062,p23
+2019,3,0.0574,p21
+2020,3,-0.017,p5
+2021,3,0.205,p20
