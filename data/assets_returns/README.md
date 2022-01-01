@@ -1,22 +1,21 @@
 # Notes on investment returns 
 
-Notes accompanying file [investment_returns_nominal](https://github.com/SussexUCU/USS/blob/5163e039a625444a155c64ddaa5351beddc16e42/data/assets_returns/nominal/1987_2021_investment_returns_nominal.csv 'investment_returns_nominal')
+Notes accompanying files in `nominal` folder. 
 
 ## note 1
 
 There is a problem in the reporting of investment returns in that: 
 - Accounts 1996-2013 report investment returns from end of December to December. See p26 2013 report and accounts 'Investment performance shown below is on a calendar year rather than financial year basis.'
 
-- Accounts 2014 and 2015 report investment returns for end of March to March and end of December to December. See page 28 in report and accounts 2015 and page 30 report and accounts 2015.
+- Accounts 2014 and 2015 report investment returns for end of March to March and end of December to December. See page 28 in report and accounts 2014 and page 30 report and accounts 2015.
 
 - Accounts 2016 onwards report investment returns March to March 
 
 In all files the end of December to December is denoted by month 1 and the end of March to March is denoted by month 4.
 
-
 File 'raw' has two entries for each year 2014 and 2015, one for month 1 and one for month 4. 
 
-File 'derived' has only one entry for 2014 (month 1) and one entry for 2015 (month 4) where to account for the change over in reporting the following adjustment is made to the 2015 investment return. 
+File 'derived2015' has only one entry for 2014 (month 1) and one entry for 2015 (month 4) where to account for the change over in reporting the following adjustment is made to the 2015 investment return. 
 
 Using accounts 2015 which report
 - December to December 15.1%
