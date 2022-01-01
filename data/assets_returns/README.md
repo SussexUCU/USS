@@ -2,7 +2,7 @@
 
 Notes accompanying files in `data/assets_returns/nominal` folder above. 
 
-Montly assets and investment returns are reported at end of month, the data gives each month an integer where 31 December is month 1 of the next year and 31 March is month 4 of the same year.
+Montly assets and investment returns are reported at end of month, the data give each month an integer where 31 December is month 1 of the next year and 31 March is month 4 of the same year.
 
 ## note 1
 
