@@ -1,5 +1,5 @@
 # USS
-Data, calcs, code and graphs on the Universities Superannuation Scheme. Please take a copy. Please join and support your unions. 
+Data, calcs, code and graphs on the Universities Superannuation Scheme. Please take a copy. Please join and support your union. 
 
 ## Folder and file organisation
 
