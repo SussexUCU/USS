@@ -36,4 +36,4 @@
 2019,4,0.0574,p21
 2020,4,-0.017,p5
 2021,4,0.205,p20
-2021,9,0.045094118,"derived from USS dashboard 89.6bn end August 2021 value. Percentage difference between end March 2021 value, raised to power 5/12"
+2021,9,0.289244012,"derived from USS dashboard 89.6bn end August 2021 value. To get % annualised equivalent. Which is percentage difference between end March 2021 value and end Aug value , raised to power 12/5"
