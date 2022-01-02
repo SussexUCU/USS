@@ -6,11 +6,11 @@ The process is roughly as follows.
 
 ## Method for 2017 and 2020
 
-Use cashflows for 2017 and 2020 (both provided by USS) and the USS provided discount rates to calculate the TP Liabilites and check they agree within 1% of the USS calculated deficit. Then use the same calculation to find a 2 d.p. discount rate percentage that produces the smallest surplus possible. 
+Use cashflows for 2017 and 2020 (both provided by USS) and the USS provided discount rates to calculate the TP Liabilites and check they agree within 1% of the USS calculated TP Liabilities. Then use the same calculation to find a 2 d.p. discount rate percentage that produces the smallest surplus possible. 
 
 ## Method for 2018 and 2021
 
-Use the cashflows for 2017 (both provided by USS) but add the 1-year projected cashflows (USS use these to calculat the Future Service Costs). There is a problem that the first year of cashflows includes regular DB pension paymenst plus lumpsumps and disability/death in service. So some unknown fraction of the first year of payments will have been paid during 2017 and 2020 respectively. To estimate this fraction find the fraction of y1 cashflows that produce reproduce the USS calcluated TP liabiliites within 1% of the USS calculated deficit. This esimate is 0.6. Use this same calculation to find a 2 d.p. discount rate percentage that produces the smallest surplus possible. 
+Use the cashflows for 2017 (both provided by USS) but add the 1-year projected cashflows (USS use these to calculat the Future Service Costs). There is a problem that the first year of cashflows includes regular DB pension paymenst plus lumpsumps and disability/death in service. So some unknown fraction of the first year of payments will have been paid during 2017 and 2020 respectively. To estimate this fraction find the fraction of y1 cashflows that reproduce the USS calcluated TP liabiliites within 1%. This esimate is 0.6. Use this same calculation to find a 2 d.p. discount rate percentage that produces the smallest surplus possible. 
 
 ## Links to google sheets of calculations 
 
