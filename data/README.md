@@ -10,7 +10,7 @@ These are the yearly USS reported assets and investment returns in the DB or inc
 | basis | year | source |
 |:--|:--|:--| 
 | `nominal`| 1987-2021 |copied direct from Annual Report and Accounts. See each .csv file in the `assets_returns` data folder above for page of relevant USS Annual Report and Account filed in [docs/reports_accounts](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
-| `cpi`| 1987-2021 | derived cpi-basis values of assets and investment returns from USS nominal-basis values using ONS historic CPI values filed in [data/ons](https://github.com/SussexUCU/USS/tree/main/data/ons")|   
+| `cpi`| 1987-2021 | derived cpi-basis values of assets and investment returns from USS nominal-basis values using ONS historic CPI values filed in [data/ons](https://github.com/SussexUCU/USS/tree/main/data/ons "ons")|   
 
 
 ## `best_estimates`
