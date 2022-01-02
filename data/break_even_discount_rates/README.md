@@ -5,3 +5,6 @@
 [2018 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/1HO5uHGFvljiC0xaLOi0VlLLDguH2N9dxh4ay9H762yM/edit?usp=sharing "2018")
 
 [2020 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/1fKTwYUSWamdtAaUD65phWHKObs0Y3LKz25dugHrc0uM/edit?usp=sharing "2020")
+
+[2021 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/1hZUzScgtPOYlRoO7J7Yh8vpqjIsuqporQZomzBa3iRE/edit?usp=sharing "2021")
+
