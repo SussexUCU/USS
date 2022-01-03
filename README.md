@@ -1,5 +1,5 @@
-# USS
-Data, calcs, code and graphs on the Universities Superannuation Scheme.
+# Universities Superannuation Scheme (USS)
+Data, code, calcs, graphs, original USS documents and references. If anything is missing or unclear 
 
 ## Folder and file organisation
 
