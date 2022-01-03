@@ -17,7 +17,7 @@ The calculation method is roughly as follows and agrees with the Excel IRR funct
 
 ## Method for 2017 and 2020
 
-Use cashflows for 2017 and 2020 (both provided by USS) and the USS provided discount rates to calculate the TP Liabilites and check they agree within 1% of the USS calculated TP Liabilities. Then use the same calculation to find a 2 d.p. discount rate percentage that produces the smallest surplus possible. 
+Use cashflows for 2017 and 2020 (both provided by USS) and the USS provided discount rates to calculate the TP Liabilites and check they agree within 1% of the USS calculated TP Liabilities. Then use the same calculation to find the discount rate percentage that produces the smallest surplus possible. 
 
 ## Method for 2018 and 2021
 
