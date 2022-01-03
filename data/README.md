@@ -71,7 +71,7 @@ These are rates that future cashflows should be discounted at (on a prudent basi
 
 ## `ons`
 
-Raw data fromo Office for National Statistics (ONS) is given here with date of download and link to ONS page. Also derived CPI data to account for the way USS historically reported assets (march-march) and investment returns (dec-dec up to 2014 then march-march from 2015). 
+Raw data from [Office for National Statistics](https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7bt/mm23  "ONS") (ONS), CPI, is given here with date of download and link to ONS page. Also derived CPI data to account for the way USS historically reported assets (march-march) and investment returns (dec-dec up to 2014 then march-march from 2015). 
 | basis | year | source |
 |:--|:--|:--| 
 | `nominal`| update when MH completes ONS work |blah |   
