@@ -14,9 +14,9 @@ Use the cashflows for 2017 (both provided by USS) but add the 1-year projected c
 
 ## Links to google sheets of calculations 
 
-JG: I will eventually upload these as Excel docs to this space, but only once a few more people have sense checked the calcs. 
+(JG: I will eventually upload these as Excel docs to this space, but only once a few more people have sense checked the calcs.)
 
-Breakeven discount rates are given to 1 d.p. as a percentage, but probably only accurate to 1 d.p. Breakeven discount rates also checked against Excel IRR function. 
+Breakeven discount rates quoted above are stated to 2 d.p. as a percentage, but probably only accurate to 1 d.p. Breakeven discount rates also checked against Excel IRR function in google sheets linked below.  
 
 [2017 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/1F1BMRor-MNPVJrTX5SvwxUEHSkik16YlLEQhj3FNGwM/edit?usp=sharing "2017")
 
