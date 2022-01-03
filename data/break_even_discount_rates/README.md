@@ -1,6 +1,6 @@
 # Calculations of breakeven discount rates
 
-Here are links to google sheets for 2017, 2018, 2020, and 2021 calculations of breakeven discount rates. Results are then quoted in the .csv files linked above. 
+Here are links to google sheets for calculations of breakeven discount rates for 2017, 2018, 2020, and 2021. Results are then quoted in the .csv files linked above. 
 (JG: I will eventually upload these as Excel files to this folder, but only once the calcs have had final check.)
 
 
