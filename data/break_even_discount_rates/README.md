@@ -29,6 +29,6 @@ Use the cashflows for 2017 and 2020 (both provided by USS) but add the 1-year pr
 
 ## Method for estimating 2011 and 2014
 
-USS does not supply cashflows for 2011 or 2014. But if we assume the same profile shape of the cashflows as for 2017, we can apply a factor to each term of cashflows to reproduce the TP Liabiliites. Once we have this factor we then use this same calculation to find a discount rate percentage that produces the smallest surplus possible. 
+USS does not supply cashflows for 2011 or 2014, but if we assume the same profile of the cashflows as for 2017 then we can apply a factor to each term of cashflows to reproduce the TP Liabiliites quoted by USS. Once we have this factor we then use this same calculation to find a discount rate percentage that produces the smallest surplus possible. 
 
 
