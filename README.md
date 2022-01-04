@@ -1,7 +1,5 @@
 # Universities Superannuation Scheme (USS)
-Data, code, calcs, graphs, original USS documents and references. 
-
-All references can be found in the README file of the [data](https://github.com/SussexUCU/USS/tree/main/data 'data') folder.
+Data, code, calcs, graphs, original USS documents and references. All references can be found in the README file of the [data](https://github.com/SussexUCU/USS/tree/main/data 'data') folder.
 
 We will continue to update. If anything is missing or unclear please get in touch with 
 - [Jackie Grant](https://profiles.sussex.ac.uk/p34565-jackie-grant/about 'Jackie')  (data, excel, references, graphs) or 
