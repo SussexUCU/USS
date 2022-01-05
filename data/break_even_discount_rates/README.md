@@ -1,6 +1,6 @@
 # Calculations of breakeven discount rates
 
-Here are links to google sheets for calculations of best estimate of annualised returns for 2011 and 2014. Results for 2011 and 2014 are then quoted to 1 s.f. in the .csv files linked above. 
+Here is the link to the google sheets for calculations of best estimate of annualised returns for 2011 and 2014. Results for 2011 and 2014 are then quoted to 1 s.f. in the .csv files linked above. 
 (JG: I will eventually upload these as Excel files to this folder, but only once the calcs have had final check.)
 
 [Estimation of 2011 and 2014 Best Estimate of returns](https://docs.google.com/spreadsheets/d/1zvyYbNkE8_sET5640TCURjYRjockkY2gnRUPwyIQi1c/edit?usp=sharing "Best Est 2011 2014")
