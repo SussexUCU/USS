@@ -5,7 +5,7 @@ We will continue to update. If anything is missing or unclear please get in touc
 - [Jackie Grant](https://profiles.sussex.ac.uk/p34565-jackie-grant/about 'Jackie')  (data, excel, references, graphs) or 
 - [Mark Hindmarsh](https://profiles.sussex.ac.uk/p7423-mark-hindmarsh/about 'Mark')  (code). 
 
-All graphs and calculation follow [Sam Marsh](https://www.sheffield.ac.uk/maths/people/academic/sam-marsh 'Sam Marsh') as per calculations of [video and spreadsheet](https://www.youtube.com/watch?v=DlMxwIytgNc 'Sam calcs') and graph of [USS Briefs 106](https://medium.com/ussbriefs/how-extreme-prudence-and-misguided-risk-management-sent-the-uss-into-crisis-baf78c35d9e1 'USS Briefs 106') 
+All graphs and calculation follow from [Sam Marsh](https://www.sheffield.ac.uk/maths/people/academic/sam-marsh 'Sam Marsh') as per calculations [video and spreadsheet](https://www.youtube.com/watch?v=DlMxwIytgNc 'Sam calcs') and graph of [USS Briefs 106](https://medium.com/ussbriefs/how-extreme-prudence-and-misguided-risk-management-sent-the-uss-into-crisis-baf78c35d9e1 'USS Briefs 106') 
 
 
 ## Folder and file organisation
