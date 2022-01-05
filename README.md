@@ -1,9 +1,12 @@
 # Universities Superannuation Scheme (USS)
-Data, code, calcs, graphs, original USS documents and references. All references can be found in the README file of the [data](https://github.com/SussexUCU/USS/tree/main/data 'data') folder.
+Data, code, calcs, graphs, original USS documents and references. All references in the README file of the [data](https://github.com/SussexUCU/USS/tree/main/data 'data') folder.
 
 We will continue to update. If anything is missing or unclear please get in touch with 
 - [Jackie Grant](https://profiles.sussex.ac.uk/p34565-jackie-grant/about 'Jackie')  (data, excel, references, graphs) or 
 - [Mark Hindmarsh](https://profiles.sussex.ac.uk/p7423-mark-hindmarsh/about 'Mark')  (code). 
+
+All graphs and calculation follow Sam Marsh as per calculations of [video and spreadsheet](https://www.youtube.com/watch?v=DlMxwIytgNc 'Sam calcs') and graph of [USS Briefs 106](https://medium.com/ussbriefs/how-extreme-prudence-and-misguided-risk-management-sent-the-uss-into-crisis-baf78c35d9e1 'USS Briefs 106') 
+
 
 ## Folder and file organisation
 
