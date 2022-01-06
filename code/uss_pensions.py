@@ -1,9 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # USS assets 
-# ## historic growth 1992-2021 
-# ## forecast growth from discount rates 2011, 14, 17, 20 and 21
+"""A module for loading and transforming USS pensions data from the SussexUCU USS GitHub site.
+
+It loads data from the ../data directory, of three kinds
+
+- Asset values and returns
+- Discount rates from valuations since 2011
+- ONS data on CPI index and annual rate.
+"""
+
 
 import os
 import numpy as np
@@ -13,32 +19,32 @@ import csv
 # ### General helper functions
 
 def prod_by_sum_of_logs(y, x):
-    # Perform a cumulatuve product of a set of annual growth factors recorded at arbitrary interbals
+    """Perform a cumulatuve product of a set of annual growth factors recorded at arbitrary interbals. """
     res = np.ones_like(x)
     dy = np.diff(y, prepend=y[0]-1)
     res = np.exp(np.cumsum(np.log(x) * dy))
     return res
 
 def log_interp(z, x, y):
-    # Log interpolator - useful for asset values, or other quantities which grow exponentially
+    """Log interpolator - useful for asset values, or other quantities which grow exponentially."""
     logy = np.log10(y)
     return np.power(10.0, np.interp(z, x, logy, left=np.nan, right=np.nan))
 
 def growth_function(y, a, A0):
-    # For fits to asset growth
+    """An exponential function for fits to asset growth. Returns A0*np.exp(a*(y-BASE_YEAR)),"""
     return A0*np.exp(a*(y-BASE_YEAR))
 
 def get_annualised_growth_rate(data, years=30):
     return sta.gmean(1 + data[0:years,1]) - 1
 
 def dec_year_to_y_m(y):
-    # Converts a year as a decimnal to a pair of integers year, month
+    """Converts a year as a decimnal to a pair of integers year, month"""
     year = int(y)
     month =int( np.round((y - year)*12) + 1)
     return [year, month]
 
 def write_csv(fn, field, array):
-    # Write an array of decimal year, data value to a csv file fn. 
+    """Write an array of decimal year, data value to a csv file fn. """
     fields = ['Year', 'Month', field]
     with open(fn, 'w') as csvfile: 
         # creating a csv writer object 
@@ -88,7 +94,11 @@ decimal_year_by_quarter = {'Q1' : 0/4,
 # Historic CPI annual rates and index, from ONS.
 
 def get_ons_data(path_ons, filename, freq="monthly"):
-
+    """
+    Loads csv file containing ONS data from path_ons/filename, and returns 
+    shape (N,2) array of Year and Value at freq given by annually, quarterly, or monthly.
+    """
+    
     ons_raw = np.genfromtxt(path_ons + filename, delimiter=',', dtype=str, skip_header=8)
     ons_raw = np.char.strip(ons_raw,'"')
     
@@ -211,6 +221,7 @@ def get_cpi_index_ons(y, base_year=BASE_YEAR):
     return cpi_index_arr
 
 def get_cpi_adjusted(a, base_year=BASE_YEAR):
+    """Returns CPI-adjusted version of array, relative to base_year."""
     a_adj = a.copy()
     cpi_index = get_cpi_index_ons(a[:,0], base_year)
     a_adj[:,1] /= cpi_index[:,1]
@@ -219,6 +230,7 @@ def get_cpi_adjusted(a, base_year=BASE_YEAR):
 # Historic USS assets and investment growth
 
 def get_uss_assets_data(path_assets, filename):
+    """Loads USS assets data."""
     data_in = np.genfromtxt(path_assets + filename, delimiter=',', usecols=(0,1,2), skip_header=1, dtype=float)
     in_shape = data_in.shape 
     data = np.zeros((in_shape[0], 2))
