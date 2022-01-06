@@ -71,18 +71,20 @@ path_best_est = path_base + 'best_estimates/'
 # Default base year for CPI adjustment.Fraction 1/4 means Apeil 1st.
 BASE_YEAR = 2020.25
 
-decimal_year_by_month = {'JAN' : 0/12,
-                'FEB' : 1/12,
-                'MAR' : 2/12,
-                'APR' : 3/12,
-                'MAY' : 4/12,
-                'JUN' : 5/12,
-                'JUL' : 6/12,
-                'AUG' : 7/12,
-                'SEP' : 8/12,
-                'OCT' : 9/12, 
-                'NOV' : 10/12,
-                'DEC' : 11/12
+to_approx_index_day = 1/24
+decimal_year_by_month = {
+                'JAN' : 0/12 + to_approx_index_day,
+                'FEB' : 1/12 + to_approx_index_day,
+                'MAR' : 2/12 + to_approx_index_day,
+                'APR' : 3/12 + to_approx_index_day,
+                'MAY' : 4/12 + to_approx_index_day,
+                'JUN' : 5/12 + to_approx_index_day,
+                'JUL' : 6/12 + to_approx_index_day,
+                'AUG' : 7/12 + to_approx_index_day,
+                'SEP' : 8/12 + to_approx_index_day,
+                'OCT' : 9/12 + to_approx_index_day, 
+                'NOV' : 10/12 + to_approx_index_day,
+                'DEC' : 11/12 + to_approx_index_day
                 }
 
 decimal_year_by_quarter = {'Q1' : 0/4,
