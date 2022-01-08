@@ -6,17 +6,17 @@ The values are in the .csv files linked above.
 
 The calculations are in the Excel files linked above, which are copies of the google sheets linked below. 
 
-[2021 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/1hZUzScgtPOYlRoO7J7Yh8vpqjIsuqporQZomzBa3iRE/edit?usp=sharing "2021")
+[2021 calculation of breakeven discount rate](https://docs.google.com/spreadsheets/d/1hZUzScgtPOYlRoO7J7Yh8vpqjIsuqporQZomzBa3iRE/edit?usp=sharing "2021")
 
-[2020 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/1fKTwYUSWamdtAaUD65phWHKObs0Y3LKz25dugHrc0uM/edit?usp=sharing "2020")
+[2020 calculation of breakeven discount rate](https://docs.google.com/spreadsheets/d/1fKTwYUSWamdtAaUD65phWHKObs0Y3LKz25dugHrc0uM/edit?usp=sharing "2020")
 
-[2018 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/1HO5uHGFvljiC0xaLOi0VlLLDguH2N9dxh4ay9H762yM/edit?usp=sharing "2018")
+[2018 calculation of breakeven discount rate](https://docs.google.com/spreadsheets/d/1HO5uHGFvljiC0xaLOi0VlLLDguH2N9dxh4ay9H762yM/edit?usp=sharing "2018")
 
-[2017 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/1F1BMRor-MNPVJrTX5SvwxUEHSkik16YlLEQhj3FNGwM/edit?usp=sharing "2017")
+[2017 calculation of breakeven discount rate](https://docs.google.com/spreadsheets/d/1F1BMRor-MNPVJrTX5SvwxUEHSkik16YlLEQhj3FNGwM/edit?usp=sharing "2017")
 
-[2014 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/14MY_lWTzAlc4yrZqex7VwGi1X1QzpzvsIPR5hIRJ7QM/edit?usp=sharing "2014")
+[2014 calculation of estimation of breakeven discount rate](https://docs.google.com/spreadsheets/d/14MY_lWTzAlc4yrZqex7VwGi1X1QzpzvsIPR5hIRJ7QM/edit?usp=sharing "2014")
 
-[2011 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/10I2StPVmcJx51Zt6iZ5sjch3sbhd98U1BHgc0Hz4Pig/edit?usp=sharing "2011")
+[2011 calculation of estimation of breakeven discount rate](https://docs.google.com/spreadsheets/d/10I2StPVmcJx51Zt6iZ5sjch3sbhd98U1BHgc0Hz4Pig/edit?usp=sharing "2011")
 
 
 
