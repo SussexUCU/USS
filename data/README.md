@@ -17,13 +17,14 @@ These are the yearly USS reported assets and investment returns in the DB or inc
 These are the USS 'best-estimates' of projected returns on assets for the DB or income builder part of the pension fund. They can be given in cpi-basis, nominal-basis or gilts-basis. Unable to find best-estimates earlier than 2017.
 | basis | year | source |
 |:--|:--|:--| 
-| `cpi`| 2011 | JG TO DO  |  
-| `cpi`| 2014 | JG TO DO  |  
+| `cpi`| 2011 | estimated from prudent discount rate, method and calculation in [best estimates](https://github.com/SussexUCU/USS/tree/main/data/best_estimates 'best estimates'  |  
+| `cpi`| 2014 | Jestimated from prudent discount rate, method and calculation in [best estimates](https://github.com/SussexUCU/USS/tree/main/data/best_estimates 'best estimates'  |  
 | `cpi`| 2017 November | copied direct from page 18 of 2017 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |  
 | `cpi`| 2018 | copied direct from page 26 of 2018 valuation in [docs/actuarial_valuations](https://github.com/SussexUCU/USS/tree/main/docs/actuarial_valuations "valuations") |   
 | `cpi`| 2020 | estimated from gilts-basis value on page 12 of the USS document 'The likely outcome of a 2021 valuation' in [docs/2020_extra_docs](https://github.com/SussexUCU/USS/tree/main/docs/2020_extra_docs  "2020_extra_docs") | 
 | `cpi`| 2021 | estimated from gilts-basis value on page 12 of the USS document 'The likely outcome of a 2021 valuation' in [docs/2020_extra_docs](https://github.com/SussexUCU/USS/tree/main/docs/2020_extra_docs  "2020_extra_docs")   | 
-| `nominal`| 2017, 2018, 2020, 2021 |derived nominal-basis values using cpi-basis values and USS CPI projections for relevant year filed in [data/cpi_gilts](https://github.com/SussexUCU/USS/tree/main/data/cpi_gilts 'cpi_gilts') | 
+| `nominal`| 2017, 2018 |derived nominal-basis values using cpi-basis values and USS CPI projections for relevant year filed in [data/cpi_gilts](https://github.com/SussexUCU/USS/tree/main/data/cpi_gilts 'cpi_gilts') | 
+| `nominal`| 2014, 2015, 2020, 2021 |these can be readily derived as nominal-basis values using cpi-basis values and USS CPI projections for relevant year filed in [data/cpi_gilts](https://github.com/SussexUCU/USS/tree/main/data/cpi_gilts 'cpi_gilts') - we haven't done this yet.| 
 
 ## `break_even_discount_rates`
 These are calculated or estimated values of discount rates that would have produced a deficit of zero for each valuation. These are calculated from cashflows for 2017 and 2020. Since USS do not provide cashflows for 2011 or 2014 we estimate these break even discount rates. Methods detailed in 
