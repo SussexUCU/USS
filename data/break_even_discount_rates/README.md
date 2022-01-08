@@ -19,7 +19,7 @@ Here are links to google sheets for calculations of breakeven discount rates for
 
 
 
-The calculation method is roughly as follows and agrees with the Excel IRR function.
+The calculation method is roughly as follows.
 
 ## Method for calculating 2017 and 2020
 
