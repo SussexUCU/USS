@@ -2,8 +2,9 @@
 
 These are the annualised rates of return of assets that would mean the scheme was fully (100%) funded. That is no deficit and no surplus as per USS definition of TP deficit and surplus. 
 
-Here are links to google sheets for calculations of breakeven discount rates for 2017, 2018, 2020, and 2021. Results are then quoted in the .csv files linked above. 
-(JG: I will eventually upload these as Excel files to this folder, but only once the calcs have had final check.)
+The values are in the .csv files linked above. 
+
+The calculations are in the Excel files linked above, which are copies of the google sheets linked below. 
 
 [2021 breakeven discount rate calculation](https://docs.google.com/spreadsheets/d/1hZUzScgtPOYlRoO7J7Yh8vpqjIsuqporQZomzBa3iRE/edit?usp=sharing "2021")
 
