@@ -92,4 +92,10 @@ Raw data from [Office for National Statistics](https://www.ons.gov.uk/economy/in
 |:--|:--|:--| 
 | `nominal`| update when MH completes ONS work |[Office for National Statistics](https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7bt/mm23  "ONS") |   
 
+## `prudence`
 
+These are the percentage confidence levels between annualised best-estimates on returns and the prudently adjusted discount rate used to calculate the Technical Provisions Liabilities. 
+| year | source |
+|:--|:--|
+| 2018-2021| page 9 'Lens 1c: CL allowing for investment outperformance in the recovery planusing USS' FBB return model (Recovery plan 15/18 years for 2020 and 10 years for 2021)' of 'The likely outcome of a 2021 valuation' in [docs/2020_extra_docs](https://github.com/SussexUCU/USS/tree/main/docs/2020_extra_docs  "2020_extra_docs") |
+| 2014-2017| page 6 'The 67th percentile confidence level (2014: 65th)' of the TP consultation 2017 in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations") |
