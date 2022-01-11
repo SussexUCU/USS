@@ -99,3 +99,4 @@ These are the percentage confidence levels between USS annualised 'best-estimate
 |:--|:--|
 | 2018-2021| page 9 'Lens 1c: CL allowing for investment outperformance in the recovery planusing USS' FBB return model (Recovery plan 15/18 years for 2020 and 10 years for 2021)' of 'The likely outcome of a 2021 valuation' in [docs/2020_extra_docs](https://github.com/SussexUCU/USS/tree/main/docs/2020_extra_docs  "2020_extra_docs") |
 | 2014-2017| page 6 'The 67th percentile confidence level (2014: 65th)' of the TP consultation 2017 in [docs/tp_consultations_related](https://github.com/SussexUCU/USS/tree/main/docs/tp_consultations_related "consultations") |
+| 2011| assumed to be inline with 2014 value |
