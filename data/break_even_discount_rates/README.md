@@ -4,6 +4,13 @@ These are the annualised rates of return of assets that would mean the scheme wa
 
 The values are in the .csv files linked above. 
 
+Update February 2022
+
+Attempt to calculate breakeven discount rates from the latest asset data. 
+
+[Oct2021 estimation of breakeven discount rate](https://docs.google.com/spreadsheets/d/1Ym-QQj-l7lQt-eB734xuIABlSj2U7SLdfKU3Tjns-vY/edit#gid=157077178 "Oct2021") October 2021 estimation of breakeven discount rate
+
+
 The calculations are in the Excel files linked above, which are copies of the google sheets linked below. 
 
 [2021 calculation of breakeven discount rate](https://docs.google.com/spreadsheets/d/1hZUzScgtPOYlRoO7J7Yh8vpqjIsuqporQZomzBa3iRE/edit?usp=sharing "2021")
