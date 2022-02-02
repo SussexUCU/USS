@@ -8,11 +8,11 @@ The values are in the .csv files linked above.
 
 Attempt to calculate breakeven discount rates from the latest asset data. 
 
-[Dec 2021 estimation of breakeven discount rate](https://docs.google.com/spreadsheets/d/1Q_vP3xsoJXFaBFPEn9kYXiAjDzyDi9rqtvu-kBqCZas/edit?usp=sharing "Dec2021") December 2021 estimation of breakeven discount rate
+[Dec 2021 estimation of breakeven discount rate](https://docs.google.com/spreadsheets/d/1Q_vP3xsoJXFaBFPEn9kYXiAjDzyDi9rqtvu-kBqCZas/edit?usp=sharing "Dec2021")
 
-[Nov 2021 estimation of breakeven discount rate](https://docs.google.com/spreadsheets/d/18DpYCu0eEzmht48QZSlUr6_QllDy8ngWB9cM-Nic1hM/edit?usp=sharing "Nov2021") October 2021 estimation of breakeven discount rate
+[Nov 2021 estimation of breakeven discount rate](https://docs.google.com/spreadsheets/d/18DpYCu0eEzmht48QZSlUr6_QllDy8ngWB9cM-Nic1hM/edit?usp=sharing "Nov2021") 
 
-[Oct 2021 estimation of breakeven discount rate](https://docs.google.com/spreadsheets/d/1Ym-QQj-l7lQt-eB734xuIABlSj2U7SLdfKU3Tjns-vY/edit#gid=157077178 "Oct2021") October 2021 estimation of breakeven discount rate
+[Oct 2021 estimation of breakeven discount rate](https://docs.google.com/spreadsheets/d/1Ym-QQj-l7lQt-eB734xuIABlSj2U7SLdfKU3Tjns-vY/edit#gid=157077178 "Oct2021") 
 
 # Valuation date break even discount rates
 The calculations are in the Excel files linked above, which are copies of the google sheets linked below. 
