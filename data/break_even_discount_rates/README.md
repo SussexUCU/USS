@@ -7,7 +7,7 @@ The values are in the .csv files linked above.
 # 2021 updates of break even discount rates and surpluses
 
 Attempt to calculate breakeven discount rates along with surpluses from the latest asset data. 
-(note: these break even rates have been confirmed as in [good agreement with data](https://twitter.com/Sam_Marsh101/status/1489258841376051210) seen in confidence by members of the USS JNC. 
+The break even rates have been confirmed as in [good agreement with data](https://twitter.com/Sam_Marsh101/status/1489258841376051210) seen in confidence by members of the USS JNC. 
 
 [Dec 2021 estimation of breakeven discount rate and surplus](https://docs.google.com/spreadsheets/d/1Q_vP3xsoJXFaBFPEn9kYXiAjDzyDi9rqtvu-kBqCZas/edit?usp=sharing "Dec2021")
 
