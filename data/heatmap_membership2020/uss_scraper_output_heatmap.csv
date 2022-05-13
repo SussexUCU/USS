@@ -1,4 +1,4 @@
-dob,salary,salary_inc,inflation,old_pension_pa,new_pension_pa,old_pension_20yr_pa,new_pension_20yr_p
+dob,salary,salary_inc,inflation,old_pension_pa,new_pension_pa,old_pension_20yr_pa,new_pension_20yr_pa
 1999,2500,0.04,0.025,2040,1650,2040,1490
 1999,7500,0.04,0.025,6120,4960,6120,4500
 1999,12500,0.04,0.025,10220,8280,10220,7520
