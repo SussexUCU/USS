@@ -176,6 +176,12 @@ for df, cpi in zip(df_by_cpi_list, cpi_list):
     non_zero_nos_df = bin_and_remove_zeros(df_29_42)
     non_zero_nos_29_43_df_list.append(non_zero_nos_df)
 
+non_zero_nos_age_under_40_df_list = []
+for df, cpi in zip(df_by_cpi_list, cpi_list):
+    df_age_under_40 = df[df["age"] < 40]
+    non_zero_nos_df = bin_and_remove_zeros(df_age_under_40)
+    non_zero_nos_age_under_40_df_list.append(non_zero_nos_df)
+
 #%%
 # Now for salaries under 40k
 salary_thresh = 40000
@@ -313,7 +319,7 @@ for cpi, df in zip(cpi_list, df_by_cpi_list):
            "Total number (29-43): {:}".format(lect_df["number"].sum()))
 
 tml_29_43_df = pd.DataFrame(total_mean_losses, 
-                      columns=["Total loss grades 29-43 GBP", "Mean loss grades 29-43 GBP", "Mean loss grades 29-43 %"])
+                      columns=["Grades 29-43 Total loss GBP", "Grades 29-43 Mean loss GBP", "Grades 29-43 Mean loss %"])
 
 losses_df = losses_df.join(tml_29_43_df)
 #%%
@@ -330,7 +336,7 @@ for cpi, df in zip(cpi_list, df_by_cpi_list):
 
 
 lpcq_29_43_df = pd.DataFrame(loss_percent_quartiles_29_43_list, 
-                       columns=["Grades (29-43) % loss Q1", "Grades (29-43) % loss Q2", "Grades (29-43) % loss Q3"])
+                       columns=["Grades 29-43 % loss Q1", "Grades 29-43 % loss Q2", "Grades 29-43 % loss Q3"])
 
 losses_df = losses_df.join(lpcq_29_43_df)
 
@@ -345,17 +351,17 @@ for cpi, df in zip(cpi_list, df_by_cpi_list):
     loss_pounds_quartiles = quartile_losses(lect_df, "loss_pounds")
     loss_pounds_quartiles_29_43_list.append(loss_pounds_quartiles)
     # print("Quartile losses kGBP:", loss_pounds_quartiles/1e3)
-    print("CPI {:.1f}%  Grades (29-43) Quartile losses GBP:   ".format(cpi/10), loss_pounds_quartiles) 
+    print("CPI {:.1f}%  Grades 29-43 Quartile losses GBP:   ".format(cpi/10), loss_pounds_quartiles) 
 
 lgbpq_29_43_df = pd.DataFrame(loss_percent_quartiles_29_43_list, 
-                       columns=["Grades (29-43) GBP loss Q1", "Grades (29-43) GBP loss Q2", "Grades (29-43) GBP loss Q3"])
+                       columns=["Grades 29-43 GBP loss Q1", "Grades 29-43 GBP loss Q2", "Grades 29-43 GBP loss Q3"])
 
 losses_df = losses_df.join(lgbpq_29_43_df)
 
 #%%
 # Total and mean losses for grades under 40s
 
-print("Age under 40: Total and mean losses")
+print("Age < 40: Total and mean losses")
 
 total_mean_losses_age_under_40 = []
 for cpi, df in zip(cpi_list, df_by_cpi_list):
@@ -368,7 +374,7 @@ for cpi, df in zip(cpi_list, df_by_cpi_list):
            "Total number age < 40: {:}".format(young_df["number"].sum()))
 
 tml_age_under_40_df = pd.DataFrame(total_mean_losses_age_under_40, 
-                      columns=["Total loss Age < 40 GBP", "Mean loss Age < 40 GBP", "Mean loss Age < 40 %"])
+                      columns=["Age < 40 Total loss GBP", "Age < 40 Mean loss GBP", "Age < 40 Mean loss %"])
 
 losses_df = losses_df.join(tml_age_under_40_df)
 #%%
@@ -402,13 +408,13 @@ for cpi, df in zip(cpi_list, df_by_cpi_list):
     # print("Quartile losses kGBP:", loss_pounds_quartiles/1e3)
     print("CPI {:.1f}%  Age < 40 Quartile losses GBP:   ".format(cpi/10), loss_pounds_quartiles) 
 
-lgbpq_age_under_40_df = pd.DataFrame(loss_percent_quartiles_age_under_40_list, 
+lgbpq_age_under_40_df = pd.DataFrame(loss_pounds_quartiles_age_under_40_list, 
                        columns=["Age < 40 GBP loss Q1", "Age < 40 GBP loss Q2", "Age < 40 GBP loss Q3"])
 
 losses_df = losses_df.join(lgbpq_age_under_40_df)
 
 #%%
-print("Lecturer age 37 on 40k losses (pounds)")
+print("'Lecturer' age 37 on 40k losses (pounds)")
 
 np.set_printoptions(precision=0)
 loss_pounds_37_40k_list = []
@@ -423,7 +429,7 @@ for cpi, df in zip(cpi_list, df_by_cpi_list):
     loss_percent_37_40k = (lect_37_40k_df["loss_percent"] * weight).sum()
     # loss_percent_37_40k_list.append(loss_percent_37_40k)
     losses_37_40k.append([loss_percent_37_40k, loss_pounds_37_40k])
-    print("CPI {:.1f}%  Lecturer age 37 on 40k losses GBP: {:.0f}".format(cpi/10,loss_pounds_37_40k) 
+    print("CPI {:.1f}%  'Lecturer' age 37 on 40k losses GBP: {:.0f}".format(cpi/10,loss_pounds_37_40k) 
         + "   losses %: {:.0f}".format(loss_percent_37_40k) ) 
 
 l_37_40k_df = pd.DataFrame(losses_37_40k, 
@@ -444,32 +450,32 @@ for cpi in cpi_list:
           "Mean loss GBP: {:.1f} k".format(b/1e3), 
           "Mean loss %: {:.3f}".format(c) )
 
-tml_under_40k_df = pd.DataFrame(total_mean_losses, 
-                      columns=["Total loss grades < 40k bGBP", "Mean loss < 40k GBP", "Mean loss < 40k %"])
+tml_under_40k_df = pd.DataFrame(total_mean_loss_under_40k_list, 
+                      columns=["Salary < 40k Total loss GBP", "Salary < 40k Mean loss GBP", "Salary < 40k Mean loss %"])
 
 losses_df = losses_df.join(tml_under_40k_df)
 
 
 #%%
 
-print("Earning under 40k quartile losses percent")
+print("Salary under 40k quartile losses percent")
 
 loss_percent_quartiles_under40k_list = []
 for cpi in cpi_list:
     df = pension_df_under40k[pension_df_under40k['inflation'] == cpi/10]
     loss_percent_quartiles = quartile_losses(df, "loss_percent")
     loss_percent_quartiles_under40k_list.append(loss_percent_quartiles)
-    print("CPI {:.1f}%  Under 40k Quartile losses GBP:   ".format(cpi/10), loss_percent_quartiles) 
+    print("CPI {:.1f}%  Under 40k Quartile losses %:   ".format(cpi/10), loss_percent_quartiles) 
 
 lpcq_under_40k_df = pd.DataFrame(loss_percent_quartiles_under40k_list, 
-                       columns=["Under 40k % loss Q1", "Under 40k % loss Q2", "Under 40k % loss Q3"])
+                       columns=["Salary < 40k % loss Q1", "Salary <  40k % loss Q2", "Salary <  40k % loss Q3"])
 
 losses_df = losses_df.join(lpcq_under_40k_df)
 
 
 #%%
 
-print("Earning under 40k quartile losses GBP")
+print("Salary under 40k quartile losses GBP")
 
 loss_pounds_quartiles_under40k_list = []
 for cpi in cpi_list:
@@ -479,7 +485,7 @@ for cpi in cpi_list:
     print("CPI {:.1f}%  Under 40k Quartile losses GBP:   ".format(cpi/10), loss_pounds_quartiles) 
 
 lgbpq_under_40k_df = pd.DataFrame(loss_pounds_quartiles_under40k_list, 
-                       columns=["Under 40k GBP loss Q1", "Under 40k GBP loss Q2", "Under 40k GBP loss Q3"])
+                       columns=["Salary <  40k GBP loss Q1", "Salary <  40k GBP loss Q2", "Salary <  40k GBP loss Q3"])
 
 losses_df = losses_df.join(lgbpq_under_40k_df)
 
@@ -652,7 +658,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
     grouped_df = non_zero_nos_df.groupby(['binned_by_pounds_loss','binned_by_salary']).sum().unstack()
     ax = grouped_df.plot.bar(y='number', stacked=True,  
                         xlabel=xlabel_gbp_txt, ylabel=ylabel_txt, 
-                        ylim=(0,80000), colormap=newcmp)
+                        ylim=(0,40000), colormap=newcmp)
     ax.legend(title=r"Salary ("+chr(163)+")", loc="upper right")
     ax.tick_params(axis='x', labelrotation=45)
     ax.grid(which='major', axis='y')
@@ -672,7 +678,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
     grouped_df = non_zero_nos_df.groupby(['binned_by_pounds_loss','binned_by_age']).sum().unstack()
     ax = grouped_df.plot.bar(y='number', stacked=True, 
                         xlabel=xlabel_gbp_txt, ylabel=ylabel_txt, 
-                        ylim=(0,80000), colormap=newcmp)
+                        ylim=(0,40000), colormap=newcmp)
     ax.legend(title=r"Age now (yr)", loc="upper right")
     ax.tick_params(axis='x', labelrotation=45)
     ax.grid(which='major', axis='y')
@@ -683,6 +689,97 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
     ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'gbp_age_stack_29_43_cpi{cpi:}.pdf')#%%
+
+#%%
+# Percentage losses, stacked by salary age < 40
+
+xlabel_txt = "Percentage loss in retirement, age 66-86"
+ylabel_txt = "Number of active USS members"
+suptitle_txt = "Loss in future USS pension value due to UUK cuts 2022, age < 40"
+title_txt = "According to USS modeller, DC taken as annuity, CPI {}%"
+
+for non_zero_nos_df, cpi in zip(non_zero_nos_age_under_40_df_list, cpi_list):
+    grouped_df = non_zero_nos_df.groupby(['binned_by_pc_loss','binned_by_salary']).sum().unstack()
+    ax = grouped_df.plot.bar(y='number', stacked=True,  
+                        xlabel=xlabel_txt, ylabel=ylabel_txt, 
+                        ylim=(0,40000), colormap=newcmp)
+    ax.legend(title=r"Salary ("+chr(163)+")", loc="upper left")
+    ax.tick_params(axis='x', labelrotation=45)
+    ax.grid(which='major', axis='y')
+    ax.minorticks_on()
+    ax.xaxis.set_tick_params(which='minor', bottom=False)
+    ax.grid(which='minor', axis='y', alpha=0.25)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.55, y=0.93)
+    ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
+    ax.get_figure().tight_layout()
+    ax.get_figure().savefig(f'salary_stack_age_under_40_cpi{cpi:}.pdf')
+    # ax.annotate("A", (0.5,0.5), xycoords='axes fraction')
+
+
+#%%
+# Percentage losses stacked by age age < 40
+
+for non_zero_nos_df, cpi in zip(non_zero_nos_age_under_40_df_list, cpi_list):
+    grouped_df = non_zero_nos_df.groupby(['binned_by_pc_loss','binned_by_age']).sum().unstack()
+    ax = grouped_df.plot.bar(y='number', stacked=True, 
+                        xlabel=xlabel_txt, ylabel=ylabel_txt, 
+                        ylim=(0,40000), colormap=newcmp)
+    ax.legend(title=r"Age now (yr)", loc="upper left")
+    ax.tick_params(axis='x', labelrotation=45)
+    ax.grid(which='major', axis='y')
+    ax.minorticks_on()
+    ax.xaxis.set_tick_params(which='minor', bottom=False)
+    ax.grid(which='minor', axis='y', alpha=0.25)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.55, y=0.93)
+    ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
+    ax.get_figure().tight_layout()
+    ax.get_figure().savefig(f'age_stack_age_under_40_cpi{cpi:}.pdf')
+
+
+#%%#%%
+# Pounds losses, stacked by salary, age < 40
+
+xlabel_gbp_txt = "Loss in retirement, age 66-86 [GBP, today's money']"
+ylabel_txt = "Number of active USS members"
+suptitle_txt = "Loss in future USS pension value due to UUK cuts 2022, age < 40"
+title_txt = "According to USS modeller, DC taken as annuity, CPI {}%"
+
+for non_zero_nos_df, cpi in zip(non_zero_nos_age_under_40_df_list, cpi_list):
+    grouped_df = non_zero_nos_df.groupby(['binned_by_pounds_loss','binned_by_salary']).sum().unstack()
+    ax = grouped_df.plot.bar(y='number', stacked=True,  
+                        xlabel=xlabel_gbp_txt, ylabel=ylabel_txt, 
+                        ylim=(0,40000), colormap=newcmp)
+    ax.legend(title=r"Salary ("+chr(163)+")", loc="upper right")
+    ax.tick_params(axis='x', labelrotation=45)
+    ax.grid(which='major', axis='y')
+    ax.minorticks_on()
+    ax.xaxis.set_tick_params(which='minor', bottom=False)
+    ax.grid(which='minor', axis='y', alpha=0.25)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.55, y=0.93)
+    ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
+    ax.get_figure().tight_layout()
+    ax.get_figure().savefig(f'gbp_salary_stack_age_under_40_cpi{cpi:}.pdf')
+
+
+#%%
+# Pounds losses stacked by age, age < 40
+
+for non_zero_nos_df, cpi in zip(non_zero_nos_age_under_40_df_list, cpi_list):
+    grouped_df = non_zero_nos_df.groupby(['binned_by_pounds_loss','binned_by_age']).sum().unstack()
+    ax = grouped_df.plot.bar(y='number', stacked=True, 
+                        xlabel=xlabel_gbp_txt, ylabel=ylabel_txt, 
+                        ylim=(0,40000), colormap=newcmp)
+    ax.legend(title=r"Age now (yr)", loc="upper right")
+    ax.tick_params(axis='x', labelrotation=45)
+    ax.grid(which='major', axis='y')
+    ax.minorticks_on()
+    ax.xaxis.set_tick_params(which='minor', bottom=False)
+    ax.grid(which='minor', axis='y', alpha=0.25)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.55, y=0.93)
+    ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
+    ax.get_figure().tight_layout()
+    ax.get_figure().savefig(f'gbp_age_stack_age_under_40_cpi{cpi:}.pdf')#%%#%%
+
 #%%
 # Now for side-by-side for those under 40k
 
