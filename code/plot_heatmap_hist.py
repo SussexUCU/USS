@@ -12,6 +12,11 @@ uss_scraper_output_heatmap_65.5.csv
 
 available on sussexucu_github
 
+Outputs:
+- PDF files with histograms
+- .csv files with computed cuts
+- .csv file with summary statistics
+    
 @author: hindmars
 """
 
@@ -49,7 +54,7 @@ pension_df["age"] = 2021.5 - pension_df["dob"]
 
 print("Pension data loaded") 
 
-# Now define the data for the USS personas 
+# Now define the data for the USS personas Aria, Bryn and Chloe
 personas_list = [["Aria", 37, 30000],  ["Bryn", 43, 50000],  ["Chloe", 51, 70000]]
 
 salary_bins = [32500, 52500, 72500]
@@ -116,7 +121,7 @@ for i, rowdata in pension_df.iterrows():
 # print(pension_df[['age', 'salary', 'number']])
 #%%
 # Binning the data
-
+print("Binning the data")
 gbp_bin_edges = np.linspace(0, 350000, 8)
 gbp_bin_labels = [ '{:}-{:}k'.format(int(l)//1000,int(r)//1000) 
                   for l, r in zip(gbp_bin_edges[:-1], gbp_bin_edges[1:])]
@@ -164,6 +169,12 @@ non_zero_nos_df_list = []
 for df_by_cpi, cpi in zip(df_by_cpi_list, cpi_list):
     non_zero_nos_df = bin_and_remove_zeros(df_by_cpi)
     non_zero_nos_df_list.append(non_zero_nos_df)
+
+non_zero_nos_29_43_df_list = []
+for df, cpi in zip(df_by_cpi_list, cpi_list):
+    df_29_42 = df[np.logical_and(df["salary"] > 33309, df["salary"] < 50296)]
+    non_zero_nos_df = bin_and_remove_zeros(df_29_42)
+    non_zero_nos_29_43_df_list.append(non_zero_nos_df)
 
 #%%
 # Now for salaries under 40k
@@ -318,7 +329,7 @@ for cpi, df in zip(cpi_list, df_by_cpi_list):
     print("CPI {:.1f}%  Grades (29-43) Quartile losses %:   ".format(cpi/10), loss_percent_quartiles) 
 
 
-lpcq_29_43_df = pd.DataFrame(loss_percent_quartiles_list, 
+lpcq_29_43_df = pd.DataFrame(loss_percent_quartiles_29_43_list, 
                        columns=["Grades (29-43) % loss Q1", "Grades (29-43) % loss Q2", "Grades (29-43) % loss Q3"])
 
 losses_df = losses_df.join(lpcq_29_43_df)
@@ -336,10 +347,65 @@ for cpi, df in zip(cpi_list, df_by_cpi_list):
     # print("Quartile losses kGBP:", loss_pounds_quartiles/1e3)
     print("CPI {:.1f}%  Grades (29-43) Quartile losses GBP:   ".format(cpi/10), loss_pounds_quartiles) 
 
-lgbpq_29_43_df = pd.DataFrame(loss_percent_quartiles_list, 
+lgbpq_29_43_df = pd.DataFrame(loss_percent_quartiles_29_43_list, 
                        columns=["Grades (29-43) GBP loss Q1", "Grades (29-43) GBP loss Q2", "Grades (29-43) GBP loss Q3"])
 
 losses_df = losses_df.join(lgbpq_29_43_df)
+
+#%%
+# Total and mean losses for grades under 40s
+
+print("Age under 40: Total and mean losses")
+
+total_mean_losses_age_under_40 = []
+for cpi, df in zip(cpi_list, df_by_cpi_list):
+    young_df = df[df["age"] < 40]
+    total_loss_pounds, mean_loss_pounds, mean_loss_percent = total_and_mean_losses(young_df)
+    total_mean_losses_age_under_40.append([total_loss_pounds, mean_loss_pounds, mean_loss_percent])
+    print("CPI {:.1f}%  Total loss GBP: {:.3}b".format(cpi/10, total_loss_pounds/1e9), 
+          "Mean loss GBP: {:.1f}k".format(mean_loss_pounds/1e3), 
+          "Mean loss %: {:.3f}".format(mean_loss_percent),
+           "Total number age < 40: {:}".format(young_df["number"].sum()))
+
+tml_age_under_40_df = pd.DataFrame(total_mean_losses_age_under_40, 
+                      columns=["Total loss Age < 40 GBP", "Mean loss Age < 40 GBP", "Mean loss Age < 40 %"])
+
+losses_df = losses_df.join(tml_age_under_40_df)
+#%%
+print("Age < 40 quartile losses")
+
+loss_percent_quartiles_age_under_40_list = []
+
+for cpi, df in zip(cpi_list, df_by_cpi_list):
+    young_df = df[df["age"] < 40]
+    loss_percent_quartiles = quartile_losses(young_df, "loss_percent")
+    loss_percent_quartiles_age_under_40_list.append(loss_percent_quartiles)
+    # print("Quartile losses kGBP:", loss_pounds_quartiles/1e3)
+    print("CPI {:.1f}%  Age < 40 Quartile losses %:   ".format(cpi/10), loss_percent_quartiles) 
+
+
+lpcq_age_under_40_df = pd.DataFrame(loss_percent_quartiles_age_under_40_list, 
+                       columns=["Age < 40 % loss Q1", "Age < 40 % loss Q2", "Age < 40 % loss Q3"])
+
+losses_df = losses_df.join(lpcq_age_under_40_df)
+
+#%%
+print("Age < 40 Quartile losses (pounds)")
+
+loss_pounds_quartiles_age_under_40_list = []
+
+np.set_printoptions(precision=0)
+for cpi, df in zip(cpi_list, df_by_cpi_list):
+    young_df = df[df["age"] < 40]
+    loss_pounds_quartiles = quartile_losses(young_df, "loss_pounds")
+    loss_pounds_quartiles_age_under_40_list.append(loss_pounds_quartiles)
+    # print("Quartile losses kGBP:", loss_pounds_quartiles/1e3)
+    print("CPI {:.1f}%  Age < 40 Quartile losses GBP:   ".format(cpi/10), loss_pounds_quartiles) 
+
+lgbpq_age_under_40_df = pd.DataFrame(loss_percent_quartiles_age_under_40_list, 
+                       columns=["Age < 40 GBP loss Q1", "Age < 40 GBP loss Q2", "Age < 40 GBP loss Q3"])
+
+losses_df = losses_df.join(lgbpq_age_under_40_df)
 
 #%%
 print("Lecturer age 37 on 40k losses (pounds)")
@@ -462,7 +528,6 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_df_list, cpi_list):
     ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'salary_stack_cpi{cpi:}.pdf')
-    # ax.annotate("A", (0.5,0.5), xycoords='axes fraction')
 
 
 #%%
@@ -529,6 +594,95 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_df_list, cpi_list):
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'gbp_age_stack_cpi{cpi:}.pdf')#%%
 
+#%%
+# Percentage losses, stacked by salary grades 29-43
+
+xlabel_txt = "Percentage loss in retirement, age 66-86"
+ylabel_txt = "Number of active USS members"
+suptitle_txt = "Loss in future USS pension value due to UUK cuts 2022, gds. 29-43"
+title_txt = "According to USS modeller, DC taken as annuity, CPI {}%"
+
+for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
+    grouped_df = non_zero_nos_df.groupby(['binned_by_pc_loss','binned_by_salary']).sum().unstack()
+    ax = grouped_df.plot.bar(y='number', stacked=True,  
+                        xlabel=xlabel_txt, ylabel=ylabel_txt, 
+                        ylim=(0,40000), colormap=newcmp)
+    ax.legend(title=r"Salary ("+chr(163)+")", loc="upper left")
+    ax.tick_params(axis='x', labelrotation=45)
+    ax.grid(which='major', axis='y')
+    ax.minorticks_on()
+    ax.xaxis.set_tick_params(which='minor', bottom=False)
+    ax.grid(which='minor', axis='y', alpha=0.25)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.55, y=0.93)
+    ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
+    ax.get_figure().tight_layout()
+    ax.get_figure().savefig(f'salary_stack_29_43_cpi{cpi:}.pdf')
+    # ax.annotate("A", (0.5,0.5), xycoords='axes fraction')
+
+
+#%%
+# Percentage losses stacked by age grades 29-43
+
+for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
+    grouped_df = non_zero_nos_df.groupby(['binned_by_pc_loss','binned_by_age']).sum().unstack()
+    ax = grouped_df.plot.bar(y='number', stacked=True, 
+                        xlabel=xlabel_txt, ylabel=ylabel_txt, 
+                        ylim=(0,40000), colormap=newcmp)
+    ax.legend(title=r"Age now (yr)", loc="upper left")
+    ax.tick_params(axis='x', labelrotation=45)
+    ax.grid(which='major', axis='y')
+    ax.minorticks_on()
+    ax.xaxis.set_tick_params(which='minor', bottom=False)
+    ax.grid(which='minor', axis='y', alpha=0.25)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.55, y=0.93)
+    ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
+    ax.get_figure().tight_layout()
+    ax.get_figure().savefig(f'age_stack_29_43_cpi{cpi:}.pdf')
+
+
+#%%
+# Pounds losses, stacked by salary, grades 29-43
+
+xlabel_gbp_txt = "Loss in retirement, age 66-86 [GBP, today's money']"
+ylabel_txt = "Number of active USS members"
+suptitle_txt = "Loss in future USS pension value due to UUK cuts 2022, grades 29-43"
+title_txt = "According to USS modeller, DC taken as annuity, CPI {}%"
+
+for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
+    grouped_df = non_zero_nos_df.groupby(['binned_by_pounds_loss','binned_by_salary']).sum().unstack()
+    ax = grouped_df.plot.bar(y='number', stacked=True,  
+                        xlabel=xlabel_gbp_txt, ylabel=ylabel_txt, 
+                        ylim=(0,80000), colormap=newcmp)
+    ax.legend(title=r"Salary ("+chr(163)+")", loc="upper right")
+    ax.tick_params(axis='x', labelrotation=45)
+    ax.grid(which='major', axis='y')
+    ax.minorticks_on()
+    ax.xaxis.set_tick_params(which='minor', bottom=False)
+    ax.grid(which='minor', axis='y', alpha=0.25)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.55, y=0.93)
+    ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
+    ax.get_figure().tight_layout()
+    ax.get_figure().savefig(f'gbp_salary_stack_29_43_cpi{cpi:}.pdf')
+
+
+#%%
+# Pounds losses stacked by age, grades 29-43
+
+for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
+    grouped_df = non_zero_nos_df.groupby(['binned_by_pounds_loss','binned_by_age']).sum().unstack()
+    ax = grouped_df.plot.bar(y='number', stacked=True, 
+                        xlabel=xlabel_gbp_txt, ylabel=ylabel_txt, 
+                        ylim=(0,80000), colormap=newcmp)
+    ax.legend(title=r"Age now (yr)", loc="upper right")
+    ax.tick_params(axis='x', labelrotation=45)
+    ax.grid(which='major', axis='y')
+    ax.minorticks_on()
+    ax.xaxis.set_tick_params(which='minor', bottom=False)
+    ax.grid(which='minor', axis='y', alpha=0.25)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.55, y=0.93)
+    ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
+    ax.get_figure().tight_layout()
+    ax.get_figure().savefig(f'gbp_age_stack_29_43_cpi{cpi:}.pdf')#%%
 #%%
 # Now for side-by-side for those under 40k
 
