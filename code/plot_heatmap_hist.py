@@ -605,7 +605,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_df_list, cpi_list):
 
 xlabel_txt = "Percentage loss in retirement, age 66-86"
 ylabel_txt = "Number of active USS members"
-suptitle_txt = "Loss in future USS pension value due to UUK cuts 2022, gds. 29-43"
+suptitle_txt = "Loss in future USS pension value due to UUK cuts 2022, SPs 29-43"
 title_txt = "According to USS modeller, DC taken as annuity, CPI {}%"
 
 for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
@@ -619,7 +619,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
     ax.minorticks_on()
     ax.xaxis.set_tick_params(which='minor', bottom=False)
     ax.grid(which='minor', axis='y', alpha=0.25)
-    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.55, y=0.93)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.5, y=0.93)
     ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'salary_stack_29_43_cpi{cpi:}.pdf')
@@ -640,7 +640,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
     ax.minorticks_on()
     ax.xaxis.set_tick_params(which='minor', bottom=False)
     ax.grid(which='minor', axis='y', alpha=0.25)
-    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.55, y=0.93)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.5, y=0.93)
     ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'age_stack_29_43_cpi{cpi:}.pdf')
@@ -651,7 +651,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
 
 xlabel_gbp_txt = "Loss in retirement, age 66-86 [GBP, today's money']"
 ylabel_txt = "Number of active USS members"
-suptitle_txt = "Loss in future USS pension value due to UUK cuts 2022, grades 29-43"
+suptitle_txt = "Loss in future USS pension value due to UUK cuts 2022, SPs 29-43"
 title_txt = "According to USS modeller, DC taken as annuity, CPI {}%"
 
 for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
@@ -665,7 +665,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
     ax.minorticks_on()
     ax.xaxis.set_tick_params(which='minor', bottom=False)
     ax.grid(which='minor', axis='y', alpha=0.25)
-    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.55, y=0.93)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.5, y=0.93)
     ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'gbp_salary_stack_29_43_cpi{cpi:}.pdf')
@@ -685,7 +685,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_29_43_df_list, cpi_list):
     ax.minorticks_on()
     ax.xaxis.set_tick_params(which='minor', bottom=False)
     ax.grid(which='minor', axis='y', alpha=0.25)
-    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.55, y=0.93)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.5, y=0.93)
     ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'gbp_age_stack_29_43_cpi{cpi:}.pdf')#%%
@@ -709,7 +709,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_age_under_40_df_list, cpi_list):
     ax.minorticks_on()
     ax.xaxis.set_tick_params(which='minor', bottom=False)
     ax.grid(which='minor', axis='y', alpha=0.25)
-    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.55, y=0.93)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.5, y=0.93)
     ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'salary_stack_age_under_40_cpi{cpi:}.pdf')
@@ -730,7 +730,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_age_under_40_df_list, cpi_list):
     ax.minorticks_on()
     ax.xaxis.set_tick_params(which='minor', bottom=False)
     ax.grid(which='minor', axis='y', alpha=0.25)
-    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.55, y=0.93)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.5, y=0.93)
     ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'age_stack_age_under_40_cpi{cpi:}.pdf')
@@ -755,7 +755,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_age_under_40_df_list, cpi_list):
     ax.minorticks_on()
     ax.xaxis.set_tick_params(which='minor', bottom=False)
     ax.grid(which='minor', axis='y', alpha=0.25)
-    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.55, y=0.93)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger', x=0.5, y=0.93)
     ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'gbp_salary_stack_age_under_40_cpi{cpi:}.pdf')
@@ -775,7 +775,7 @@ for non_zero_nos_df, cpi in zip(non_zero_nos_age_under_40_df_list, cpi_list):
     ax.minorticks_on()
     ax.xaxis.set_tick_params(which='minor', bottom=False)
     ax.grid(which='minor', axis='y', alpha=0.25)
-    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.55, y=0.93)
+    ax.get_figure().suptitle(suptitle_txt, fontsize='larger',  x=0.5, y=0.93)
     ax.set_title(title_txt.format(cpi/10), fontsize='smaller', x=0.49)
     ax.get_figure().tight_layout()
     ax.get_figure().savefig(f'gbp_age_stack_age_under_40_cpi{cpi:}.pdf')#%%#%%
