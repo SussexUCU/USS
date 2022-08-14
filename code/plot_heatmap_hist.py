@@ -489,6 +489,34 @@ lgbpq_under_40k_df = pd.DataFrame(loss_pounds_quartiles_under40k_list,
 
 losses_df = losses_df.join(lgbpq_under_40k_df)
 
+#%%
+
+# Assemble data for tables
+#
+# Table 2
+# \begin{tabular}{|l|r||r|r|r||r||r|}
+
+# \hline
+# \textbf{Group} & \textbf{CPI} & \textbf{Q1 }& \textbf{Q2} & \textbf{Q3} & \textbf{Mean}  & \textbf{Mode range}      \\
+# \hline
+# \hline
+# All & 2.5\% & 22\% & 29\% & 33\% & 27\% & 30\%-35\%  \\
+# staff & 2.8\% & 26\% & 33\% & 37\% & 31\% & 35\%-40\%  \\
+#  & 3.0\% & 28\% & 35\% & 40\% & 33\%  & 40\%-45\% \\
+# \hline
+# \hline
+# All staff & 2.5\% & 26\% & 32\% & 35\% & 30\% & 30\%-35\%  \\
+# $<$ 40 & 2.8\% & 30\% & 37\% & 40\% & 35\% & 35\%-40\%   \\
+# yrs old & 3.0\% & 33\% & 39\% & 43\% & 38\%  & 40\%-45\% \\
+# \hline
+# \end{tabular}
+
+table2_top_df = losses_df[["CPI", "% loss Q1", "% loss Q2", "% loss Q3","Mean loss %"]]
+table2_bot_df = losses_df[["CPI", "Age < 40 % loss Q1", "Age < 40 % loss Q2", "Age < 40 % loss Q3","Age < 40 Mean loss %"]]
+
+table_3_df = losses_df[["CPI", "Total loss GBP", "Age < 40 Total loss GBP"]]
+table_4_top_df = losses_df[["CPI", "GBP loss Q1", "GBP loss Q2", "GBP loss Q3","Mean loss GBP"]]
+table_4_top_df = losses_df[["CPI", "Age < 40 GBP loss Q1", "Age < 40 GBP loss Q2", "Age < 40 GBP loss Q3","Age < 40 Mean loss GBP"]]
 
 #%%
 #Now for the plotting 

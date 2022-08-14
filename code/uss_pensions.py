@@ -69,7 +69,7 @@ path_ons = path_base + 'ons/'
 path_best_est = path_base + 'best_estimates/'
 
 # Default base year for CPI adjustment.Fraction 1/4 means Apeil 1st.
-BASE_YEAR = 2020.25
+BASE_YEAR = 2022.25
 
 to_approx_index_day = 1/24
 decimal_year_by_month = {
@@ -243,10 +243,10 @@ def get_uss_assets_data(path_assets, filename):
 
 print("USS historic assets and investment growth data loading:")
 # assets_nom = np.genfromtxt(path_assets + 'nominal/1992_2021_raw_assets_nominal.csv', delimiter=',', usecols=(0,1,2), skip_header=1, dtype=float)
-assets_nom = get_uss_assets_data(path_assets, 'nominal/1992_2021_raw_assets_nominal.csv')
+assets_nom = get_uss_assets_data(path_assets, 'nominal/1992_todate_raw_assets_nominal.csv')
 print("Assets (nominal, B GBP) from annual report       assets_nom")
 # inv_ret_nom = np.genfromtxt(path_assets + 'nominal/1987_2021_raw_investment_returns_nominal.csv', delimiter=',', usecols=(0,1,2), skip_header=1, dtype=float)
-inv_ret_nom = get_uss_assets_data(path_assets, 'nominal/1987_2021_raw_investment_returns_nominal.csv')
+inv_ret_nom = get_uss_assets_data(path_assets, 'nominal/1987_todate_raw_investment_returns_nominal.csv')
 print("Investment returns (nominal basis)               inv_ret_nom")
 
 
@@ -292,7 +292,8 @@ def get_cum_inv_ret_nom(y, base_yr=BASE_YEAR):
     cum_inv_ret[:,0] = y
     cum_inv_ret_arr = cum_inv_ret_nom()
     cum_inv_ret_base_year = log_interp(base_yr, cum_inv_ret_arr[:, 0], cum_inv_ret_arr[:, 1])
-    cum_inv_ret[:,1] = log_interp(y, cum_inv_ret_arr[:, 0], cum_inv_ret_arr[:, 1]) * get_assets_nom_reported(base_yr)[0,1]/cum_inv_ret_base_year
+    cum_inv_ret[:,1] = log_interp(y, cum_inv_ret_arr[:, 0], 
+                     cum_inv_ret_arr[:, 1]) * get_assets_nom_reported(base_yr)[0,1]/cum_inv_ret_base_year
     
     return cum_inv_ret 
 
@@ -332,27 +333,31 @@ def get_assets_cpi_reported(y, base_year=BASE_YEAR):
     return assets_cpi
 
 
+
 print("Estimating USS assets from investment returns, normalised to nominal assets in year {}:".format(BASE_YEAR))
 # print("assets_cpi_inv_ret_2020 = get_assets_cpi_inv_ret(assets_nom[:,0])")
 # assets_cpi_inv_ret_2020 = get_assets_cpi_inv_ret(assets_nom[:,0])
-cum_inv_ret_nom_2020 = get_cum_inv_ret_nom(assets_nom[:,0])
-print("Stored in array:                                ", "cum_inv_ret_nom_2020")
+cum_inv_ret_nom = get_cum_inv_ret_nom(inv_ret_nom[:,0])
+print("Stored in array:                                ", "cum_inv_ret_nom")
 
-print("Converting reported assets and estimated assets to CPI basis, base year {}:".format(BASE_YEAR))
-assets_reported_cpi_2020 = get_cpi_adjusted(assets_nom)
-assets_inv_ret_cpi_2020 = get_cpi_adjusted(cum_inv_ret_nom_2020)
-print("Reported assets CPI stored in array:           ", "assets_reported_cpi_2020")
-print("Estimated assets CPI stored in array:           ", "assets_inv_ret_cpi_2020")
-print("*** Note 1: assets are estimated using investment returns, with reported assets at 2020 as the basis")
-print("*** Note 2: they are estimated at end March by geometric interpolation of end Dec values.")
-print()
-
+def assets_nominal_to_cpi(base_year=BASE_YEAR):
+    print("Converting reported assets and estimated assets to CPI basis, base year {}:".format(base_year))
+    assets_reported_cpi = get_cpi_adjusted(assets_nom, base_year)
+    assets_inv_ret_cpi = get_cpi_adjusted(cum_inv_ret_nom, base_year)
+    print("Reported assets CPI stored in array:           ", "assets_reported_cpi")
+    print("Estimated assets CPI stored in array:           ", "assets_inv_ret_cpi")
+    print("*** Note 1: assets are estimated using investment returns, \
+            with reported assets at {} as the basis".format(base_year))
+    print("*** Note 2: they are estimated at end March by geometric interpolation of end Dec values.")
+    print()
+    return assets_reported_cpi, assets_inv_ret_cpi
 
 # Future discount rates, assume column 0 is year, column 1 is term, column 2 is discount rate
 # Should really compute from term to be derived more directly from data
 # Should really load from original data in nominal, and compute from USS projected CPI
 
-valuation_list = ['2011', '2014', '2017a', '2017b', '2018', '2019', '2020a', '2020b', '2021a', '2021b']
+valuation_list = ['2011', '2014', '2017a', '2017b', '2018', '2019', 
+                  '2020a', '2020b', '2021a', '2021b', '2022a', '2022b']
 
 disc_prud_filename_list = [
         '2011_DISCOUNT_RATE_cpi_basis.csv',
@@ -364,7 +369,9 @@ disc_prud_filename_list = [
         '2020_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv',
         '2020_DISCOUNT_RATE_UUK_cuts_cpi_basis.csv',
         '2021_DISCOUNT_RATE_USS_est_maintain_benefits_cpi_basis.csv',
-        '2021_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv'
+        '2021_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv',
+        '2022_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv',
+        '2022_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv'
         ]
 
 disc_best_filename_list = [
@@ -377,6 +384,8 @@ disc_best_filename_list = [
         '2020_BEST_EST_cpi.csv',
         '',
         '2021_BEST_EST_cpi.csv',
+        '',
+        '',
         ''
     ]
 
@@ -394,10 +403,10 @@ def get_disc_data(path, disc_filename_dict=disc_prud_filename_dict, cols=(0,2), 
             disc_rate_array = np.genfromtxt(filename, delimiter=',', usecols=cols, skip_header=1)
             disc_rate_dict[val] = disc_rate_array
         except:
-            pass
+            print("failed to load " + filename)
     return disc_rate_dict
     
-print("USS disoount rates data loading:")
+print("USS discount rates data loading:")
 disc_prud_cpi_dict = get_disc_data(path_discount, disc_prud_filename_dict)
 print("Prudent discount rates as dictionary             disc_prud_cpi_dict")
 disc_best_cpi_dict = get_disc_data(path_best_est, disc_best_filename_dict)
@@ -445,4 +454,5 @@ def get_cum_disc_uss_cpi(y, valuation, disc_dict=disc_prud_cpi_dict):
     return cum_disc
 
 
-
+# Finally do the conversion of assets from nominal to CPI basis
+assets_reported_cpi, assets_inv_ret_cpi = assets_nominal_to_cpi()
