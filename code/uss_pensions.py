@@ -19,7 +19,7 @@ import csv
 # ### General helper functions
 
 def prod_by_sum_of_logs(y, x):
-    """Perform a cumulatuve product of a set of annual growth factors recorded at arbitrary interbals. """
+    """Perform a cumulative product of a set of annual growth factors recorded at arbitrary interbals. """
     res = np.ones_like(x)
     dy = np.diff(y, prepend=y[0]-1)
     res = np.exp(np.cumsum(np.log(x) * dy))
@@ -135,7 +135,7 @@ def get_ons_data(path_ons, filename, freq="monthly"):
 print("ONS data loading:")
 cpi_annual_monthly_ons = get_ons_data(path_ons, 'ons_cpi_annual_series.csv')
 cpi_annual_monthly_ons[:,1] *= 0.01
-print("Annual CPI change, monthly, as array             cpi_annual_monthly_ons")
+print("Annual CPI change, monthly, as array             cpi_annual_monthly_ons, last entry {}".format(cpi_annual_monthly_ons[-1,:]))
 cpi_annual_annually_ons = get_ons_data(path_ons, 'ons_cpi_annual_series.csv', "annually")
 cpi_annual_annually_ons[:,1] *= 0.01
 print("Annual CPI change, annually, as array            cpi_annual_annually_ons")
@@ -145,7 +145,7 @@ print("Annual CPI change, annually Jan-Jan, as array    cpi_annual_jan_jan_ons")
 
 cpi_index_monthly_ons = get_ons_data(path_ons, 'ons_cpi_index_series.csv')
 cpi_index_monthly_ons[:,1] *= 0.01
-print("Annual CPI index (2015=1.00), monthly, as array  cpi_index_monthly_ons")
+print("Annual CPI index (2015=1.00), monthly, as array  cpi_index_monthly_ons, last entry {}".format(cpi_index_monthly_ons[-1,:]))
 print()
 
 # ### CPI helper functions
