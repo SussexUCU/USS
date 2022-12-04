@@ -357,7 +357,7 @@ def assets_nominal_to_cpi(base_year=BASE_YEAR):
 # Should really load from original data in nominal, and compute from USS projected CPI
 
 valuation_list = ['2011', '2014', '2017a', '2017b', '2018', '2019', 
-                  '2020a', '2020b', '2021a', '2021b', '2022a', '2022b']
+                  '2020a', '2020b', '2021a', '2021b', '2022a', '2022b', '2022c', '2022d']
 
 disc_prud_filename_list = [
         '2011_DISCOUNT_RATE_cpi_basis.csv',
@@ -371,7 +371,9 @@ disc_prud_filename_list = [
         '2021_DISCOUNT_RATE_USS_est_maintain_benefits_cpi_basis.csv',
         '2021_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv',
         '2022_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv',
-        '2022_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv'
+        '2022_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv',
+        '2022_JUNE_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv',
+        '2022_JUNE_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv'
         ]
 
 disc_best_filename_list = [
@@ -384,6 +386,8 @@ disc_best_filename_list = [
         '2020_BEST_EST_cpi.csv',
         '',
         '2021_BEST_EST_cpi.csv',
+        '',
+        '',
         '',
         '',
         ''
@@ -403,7 +407,7 @@ def get_disc_data(path, disc_filename_dict=disc_prud_filename_dict, cols=(0,2), 
             disc_rate_array = np.genfromtxt(filename, delimiter=',', usecols=cols, skip_header=1)
             disc_rate_dict[val] = disc_rate_array
         except:
-            print("failed to load " + filename)
+            pass
     return disc_rate_dict
     
 print("USS discount rates data loading:")
