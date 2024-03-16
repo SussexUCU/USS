@@ -69,7 +69,7 @@ path_ons = path_base + 'ons/'
 path_best_est = path_base + 'best_estimates/'
 
 # Default base year for CPI adjustment.Fraction 1/4 means Apeil 1st.
-BASE_YEAR = 2022.25
+BASE_YEAR = 2023.25
 
 to_approx_index_day = 1/24
 decimal_year_by_month = {
@@ -356,8 +356,13 @@ def assets_nominal_to_cpi(base_year=BASE_YEAR):
 # Should really compute from term to be derived more directly from data
 # Should really load from original data in nominal, and compute from USS projected CPI
 
-valuation_list = ['2011', '2014', '2017a', '2017b', '2018', '2019', 
-                  '2020a', '2020b', '2021a', '2021b', '2022a', '2022b', '2022c', '2022d']
+valuation_list = ['2011', '2014', 
+                  '2017a', '2017b', 
+                  '2018', '2019', 
+                  '2020a', '2020b', 
+                  '2021a', '2021b', 
+                  '2022a', '2022b', '2022c', '2022d', '2022e', '2022f',
+                  '2023']
 
 disc_prud_filename_list = [
         '2011_DISCOUNT_RATE_cpi_basis.csv',
@@ -373,28 +378,29 @@ disc_prud_filename_list = [
         '2022_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv',
         '2022_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv',
         '2022_JUNE_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv',
-        '2022_JUNE_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv'
+        '2022_JUNE_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv', 
+        '2022_SEPT_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv',
+        '2022_SEPT_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv',
+        '2023_DISCOUNT_RATE_restore_benefits_cpi_basis.csv'
         ]
 
+best_est_list = ['2017', '2018', '2020', '2020 FMP', '2021', '2021 FMP', 
+                 '2022 FMP', '2022 JUN FMP', '2022 SEP FMP']
+
 disc_best_filename_list = [
-        '',
-        '',
-        '',
         '2017_November_BEST_EST_cpi_basis.csv',
         '2018_BEST_EST_cpi.csv', 
-        '',
         '2020_BEST_EST_cpi.csv',
-        '',
+        '2020_FMP_FBB_30yr_pre_ret_best_est_CPI.csv',
         '2021_BEST_EST_cpi.csv',
-        '',
-        '',
-        '',
-        '',
-        ''
+        '2021_FMP_FBB_30yr_pre_ret_best_est_CPI.csv',
+        '2022_FMP_FBB_30yr_pre_ret_best_est_CPI.csv',
+        '2022_JUNE_FMP_FBB_30yr_pre_ret_best_est_CPI.csv',
+        '2022_SEPT_FMP_FBB_30yr_pre_ret_best_est_CPI.csv'
     ]
 
 disc_prud_filename_dict = dict(zip(valuation_list, disc_prud_filename_list))
-disc_best_filename_dict = dict(zip(valuation_list, disc_best_filename_list))
+disc_best_filename_dict = dict(zip(best_est_list, disc_best_filename_list))
 
 def get_disc_data(path, disc_filename_dict=disc_prud_filename_dict, cols=(0,2), basis='cpi'):
     sep = ""
@@ -426,10 +432,7 @@ def cum_disc_uss_cpi(valuation, disc_dict=disc_prud_cpi_dict):
     using USS data. Data is input using a dictionary, with year as key, 
     and 2-column arrays (year, value) as values. Default is prudent discount 
     rate data. 
-    Allowed values for valuation:
-    prudent = "2011", "2014", "2017a", "2017b", "2018", "2019", "2020a", 
-        "2020b", "2021a", "2021b"
-    best est = "2017b", "2018", "2020a", "2021a"
+    Allowed values for valuation are in 'valuation_list' variable.
         
     Returns an array of two columns, year and value.
     """
