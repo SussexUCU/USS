@@ -3,7 +3,7 @@
 
 ONS data store in files `ons_cpi_annual_series.csv`, `ons_cpi_index_series`.
 
-Rename to `ons_cpi_..._series_<year>_<month>.csv`
+Update both files
 
 Seaarch for 'ONS CPI annual series', 'ONS CPI index series'
 
