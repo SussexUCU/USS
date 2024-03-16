@@ -5,7 +5,7 @@ ONS data store in files `ons_cpi_annual_series.csv`, `ons_cpi_index_series`.
 
 Update both files from 
 
-Availabel direct from ONS
+Available direct from ONS
 - [ONS CPI annual series]( https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/)
 - [ONS CPI index series](https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7bt/)
 
