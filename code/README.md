@@ -1,6 +1,6 @@
 ## USS pensions code updates
 
-To update Sam March prudent projections graph: 
+To update Sam Marsh prudent projections graph: 
 
 - update CPI by updating `ons_cpi_annual_series.csv` and `ons_cpi_index_series.csv` direct from ONS site: see Folder ons
 - update assets values by updating `1992_todate_raw_assets_nominal.csv` by adding row to end from USS data: see Folder assets_returns.
