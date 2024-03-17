@@ -111,6 +111,12 @@ decimal_year_by_quarter = {'Q1' : 0/4,
                            'Q4' : 3/4
                            }
 
+def get_year_month_string(year_dec):
+    mon_list = list(decimal_year_by_month.keys())
+    yr = str(int(np.floor(12 * (year_dec-1/24))//12))
+    mon = mon_list[int(np.floor(12 * (year_dec-1/24))%12)]
+    return yr, mon
+
 # Historic CPI annual rates and index, from ONS.
 
 def get_ons_data(path_ons, filename, freq="monthly"):
@@ -364,8 +370,8 @@ def assets_nominal_to_cpi(base_year=BASE_YEAR):
     assets_inv_ret_cpi = get_cpi_adjusted(cum_inv_ret_nom, base_year)
     print("Reported assets CPI stored in array:           ", "assets_reported_cpi")
     print("Estimated assets CPI stored in array:           ", "assets_inv_ret_cpi")
-    print("*** Note 1: assets are estimated using investment returns, \
-            with reported assets at {} as the basis".format(base_year))
+    print("*** Note 1: assets are estimated using investment returns, " 
+          + "with reported assets at {} as the basis".format(base_year))
     print("*** Note 2: they are estimated at end March by geometric interpolation of end Dec values.")
     print()
     return assets_reported_cpi, assets_inv_ret_cpi
@@ -396,9 +402,9 @@ disc_prud_filename_list = [
         '2022_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv',
         '2022_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv',
         '2022_JUNE_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv',
-        '2022_JUNE_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv', 
+        '2022_JUNE_DISCOUNT_RATE_UUK_cuts_cpi_basis.csv', 
         '2022_SEPT_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv',
-        '2022_SEPT_DISCOUNT_RATE_USS_est_UUK_cuts_cpi_basis.csv',
+        '2022_SEPT_DISCOUNT_RATE_UUK_cuts_cpi_basis.csv',
         '2023_DISCOUNT_RATE_restore_benefits_cpi_basis.csv'
         ]
 
@@ -431,14 +437,16 @@ def get_disc_data(path, disc_filename_dict=disc_prud_filename_dict, cols=(0,2), 
             disc_rate_array = np.genfromtxt(filename, delimiter=',', usecols=cols, skip_header=1)
             disc_rate_dict[val] = disc_rate_array
         except:
-            pass
+            print('Warning: failed to read file', filename)
     return disc_rate_dict
     
 print("USS discount rates data loading:")
 disc_prud_cpi_dict = get_disc_data(path_discount, disc_prud_filename_dict)
 print("Prudent discount rates as dictionary             disc_prud_cpi_dict")
+print(disc_prud_cpi_dict.keys())
 disc_best_cpi_dict = get_disc_data(path_best_est, disc_best_filename_dict)
 print("Best estimate discount rates as dictionary       disc_best_cpi_dict")
+print(disc_best_cpi_dict.keys())
 print()
 
 
