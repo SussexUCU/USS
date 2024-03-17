@@ -5,9 +5,27 @@
 
 It loads data from the ../data directory, of three kinds
 
-- Asset values and returns
-- Discount rates from valuations since 2011
-- ONS data on CPI index and annual rate.
+- Asset values and returns (default relative path 'assets_returns/nominal/')
+    files
+    '1992_todate_raw_assets_nominal.csv'
+    '1987_todate_raw_investment_returns_nominal.csv'
+
+- Discount rates from valuations since 2011 (default relative path 'discount_rates/cpi/')
+    prudent discount rates files in list:           disc_prud_filename_list
+        short form labels in list:                  valuation_list 
+    best estimate discount rates files in list:     disc_best_filename_list
+        short form labels in list:                  best_est_list 
+    
+    When new discount rate files are added, the lists in this module should be updated.
+
+- ONS data on CPI index and annual rate (default relative path 'ons/')
+    files
+    'ons_cpi_annual_series.csv'
+    'ons_cpi_index_series.csv'
+
+    When new CPI data is added, the BASE_YEAR can be updated. This can also be 
+    reset before running the code.
+
 """
 
 
@@ -68,7 +86,7 @@ path_discount = path_base + 'discount_rates/'
 path_ons = path_base + 'ons/'
 path_best_est = path_base + 'best_estimates/'
 
-# Default base year for CPI adjustment.Fraction 1/4 means Apeil 1st.
+# Default base year for CPI adjustment.Fraction 1/4 means April 1st.
 BASE_YEAR = 2023.25
 
 to_approx_index_day = 1/24
