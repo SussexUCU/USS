@@ -13,6 +13,9 @@ To update Sam Marsh prudent projections graph:
 - update discount rates by adding new file `<YEAR>_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv` all stored in Folder [discount rates](https://github.com/SussexUCU/USS/tree/main/data/discount_rates/cpi)
 - Note: have not added instructions for 1. Best_est or 2. Break_even yet as 1. USS best-est data inconsistent, and 2. have not got data/calculated break-evens
 - Copy the code `plot_assets.ipynb` to e.g. `plot_assets_<CURRENT_YEAR>.ipynb`.
+- Check the list of valuations in `skip_list` that you don't want to plot the projected assets for.
+- Set variables `save_plots` and `save_data` as desired.
+- Run code.
 
 ### More detail about data files used by code
 
