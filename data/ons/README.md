@@ -3,14 +3,10 @@
 
 ONS data store in files `ons_cpi_annual_series.csv`, `ons_cpi_index_series`.
 
-Rename to `ons_cpi_..._series_<year>_<month>.csv`
+Update both files from 
 
-Seaarch for 'ONS CPI annual series', 'ONS CPI index series'
+Available direct from ONS
+- [ONS CPI annual series]( https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/)
+- [ONS CPI index series](https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7bt/)
 
 Download "Full unfiltered time series" .csv files and rename to `ons_cpi_annual_series.csv`, `ons_cpi_index_series`
-
-They should be in:
-
-https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7bt/
-
-https://www.ons.gov.uk/economy/inflationandpriceindices/timeseries/d7g7/
