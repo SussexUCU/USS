@@ -3,8 +3,8 @@
 To update Sam Marsh prudent projections graph: 
 
 - update CPI by updating `ons_cpi_annual_series.csv` and `ons_cpi_index_series.csv` direct from ONS site: see Folder [ons](https://github.com/SussexUCU/USS/tree/main/data/ons)
-- update assets values by updating `1992_todate_raw_assets_nominal.csv` by adding row from USS data: see Folder nominal in folder [assets_returns](https://github.com/SussexUCU/USS/tree/b1ce885eb2e5e1285a72187809d959660faf5bbf/data/assets_returns).
-- update discount rates by adding new file `<YEAR>_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv` all stored in Folder [discount rates](https://github.com/SussexUCU/USS/tree/b1ce885eb2e5e1285a72187809d959660faf5bbf/data/discount_rates/cpi)
+- update assets values by updating `1992_todate_raw_assets_nominal.csv` by adding row from USS data: see Folder nominal in folder [assets_returns](https://github.com/SussexUCU/USS/tree/main/data/assets_returns)).
+- update discount rates by adding new file `<YEAR>_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv` all stored in Folder [discount rates](https://github.com/SussexUCU/USS/tree/main/data/discount_rates/cpi)
 - Note: have not added instructions for 1. Best_est or 2. Break_even yet as 1. USS best-est data inconsistent, and 2. have not got data/calculated break-evens
 - Run code as below
   
