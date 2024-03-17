@@ -12,24 +12,23 @@ To update Sam Marsh prudent projections graph:
 - update assets values by updating `1992_todate_raw_assets_nominal.csv` by adding row from USS data: see Folder nominal in folder [assets_returns](https://github.com/SussexUCU/USS/tree/main/data/assets_returns/nominal).
 - update discount rates by adding new file `<YEAR>_DISCOUNT_RATE_maintain_benefits_cpi_basis.csv` all stored in Folder [discount rates](https://github.com/SussexUCU/USS/tree/main/data/discount_rates/cpi)
 - Note: have not added instructions for 1. Best_est or 2. Break_even yet as 1. USS best-est data inconsistent, and 2. have not got data/calculated break-evens
-- Run code as above
+- Copy the code `plot_assets.ipynb` to e.g. `plot_assets_<CURRENT_YEAR>.ipynb`.
 
 ### More detail about data files used by code
 
-- Asset values and returns (default relative path 'assets_returns/nominal/')
-    '1992_todate_raw_assets_nominal.csv'
-    '1987_todate_raw_investment_returns_nominal.csv'
+- Asset values and returns (default relative path `assets_returns/nominal/`)
+    - `1992_todate_raw_assets_nominal.csv`
+    - `1987_todate_raw_investment_returns_nominal.csv`
 
-- Discount rates from valuations since 2011 (default relative path 'discount_rates/cpi/')
-    prudent discount rates files in list:           disc_prud_filename_list
-        short form labels in list:                  valuation_list 
-        zipped together in dictionary:              disc_prud_filename_dict
-    best estimate discount rates files in list:     disc_best_filename_list
-        short form labels in list:                  best_est_list 
-        zipped together in dictionary:              disc_best_filename_list
+- Discount rates from valuations since 2011 (default relative path `discount_rates/cpi/`).
+    - prudent discount rates files in list:           `disc_prud_filename_list`
+        - short form labels in list:                  `valuation_list`
+    - best estimate discount rates files in list:     `disc_best_filename_list`
+        - short form labels in list:                  `best_est_list`
+    - The lists (in `uss_pensions.py`) should be updated as new files are added.
 
-- ONS data on CPI index and annual rate (default relative path 'ons/')
-    'ons_cpi_annual_series.csv'
-    'ons_cpi_index_series.csv'
+- ONS data on CPI index and annual rate (default relative path `ons/`)
+    - `ons_cpi_annual_series.csv`
+    - `ons_cpi_index_series.csv`
 
   
