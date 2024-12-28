@@ -12,6 +12,12 @@ Bla
 
 | File name | First page |
 |:--|:--|
-| `D_2009_A_2011_USS_scheme_rules`|copied direct from Annual Report and Accounts. See each .csv file in [data/assets_returns](https://github.com/SussexUCU/USS/tree/main/data/assets_returns 'assets_returns') data folder above for page of relevant USS Annual Report and Account filed in [docs/reports_accounts](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
-| `D_2009_A_2014_USS_scheme_rules` | derived using script in [code](https://github.com/SussexUCU/USS/tree/main/code 'code') to get cpi-basis values by month of reporting of assets and investment returns from USS nominal-basis values using ONS historic CPI values filed in [data/ons](https://github.com/SussexUCU/USS/tree/main/data/ons "ons")|   
+| `D_2009_A_2011_USS_scheme_rules`|DATED 30 APRIL 2009
+CONSOLIDATED RULES OF UNIVERSITIES SUPERANNUATION SCHEME
+incorporating all
+Deeds of Amendment up to and including the Fourth Deed of Amendment dated 2 June 2011](https://github.com/SussexUCU/USS/tree/main/docs/reports_accounts 'report_accounts') |   
+| `D_2009_A_2014_USS_scheme_rules` | DATED 30 APRIL 2009
+CONSOLIDATED RULES OF UNIVERSITIES SUPERANNUATION SCHEME
+incorporating all
+Deeds of Amendment up to and including the Fifteenth Deed of Amendment dated 9 December 2014|   
 
