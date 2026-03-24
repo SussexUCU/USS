@@ -1,14 +1,14 @@
 # USS Scheme Rules
 
-Four PDFs named according to Date of Rules and most recent Ammendement e.g. D_2009_A_2011_USS_scheme_rules is Dated 2009 and Amended 2011. 
+Five PDFs named according to Date of Rules and most recent Ammendement e.g. D_2009_A_2011_USS_scheme_rules is Dated 2009 and Amended 2011. 
 
-Table below shows first page of each of Four PDFs. 
+Table below shows first page of each PDF. 
 
 If you have other versions please get in touch. 
 
 
 ## Scheme rules first page
-Table showing file name of four PDFs of scheme rule and first page ofo scheme rules which state differences between date of rules and date of most recent ammendment. Bold emphasis added to first page text. 
+Table showing file name of PDFs of scheme rule and first page of scheme rules which state differences between date of rules and date of most recent ammendment. Bold emphasis added to first page text. 
 
 | File name | First page (rule date and ammendments with date shown in bold) |
 |:--|:--|
